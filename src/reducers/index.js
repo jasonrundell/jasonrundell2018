@@ -1,0 +1,1 @@
+import blogsReducer from './blogs';
