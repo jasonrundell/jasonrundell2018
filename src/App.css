@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 16px 'Noto Sans SC', sans-serif;
+  background-color: #232f3e;
+  color: #e9eaeb;
+}
+h1, h2 {
+  font-weight: 400;
+  text-align: center;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 3rem;
+}
+
+h2 {
+  margin: 0.8rem 0;
+}
+
+i {
+  display: inline !important;
+}
+
+.jr__link {
+  color: #ff9900;
+}
+
+.jr__font--color-primary {
+  color: #ff9900;
+}
+
+.jr__font--lg {
+  font-size: 1rem;
+}
+
+.jr__container {
+  margin: 1rem;
+  max-width: 40rem;
+  display: grid;
+
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.jr__container--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.jr__column {
+  padding: 0 2rem;
+}
+
+
+@media (min-width: 960px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h1, h2 {
+    text-align: left;
+  }
+  .jr__container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .jr__container--3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+

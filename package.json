@@ -1,10 +1,14 @@
 {
   "name": "jasonrundell2018",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
+  "description": "2018 jasonrundell.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonrundell/jasonrundell2018.git"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "start": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html --public-url ./"
   },
@@ -12,15 +16,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dropship-components": "github:jasonrundell/dropship-components#feature/1.0.0",
     "history": "^4.7.2",
-    "parcel-bundler": "^1.6.2",
-    "react": "^16.2.0",
-    "react-dom": "^16.2.0",
-    "react-fontawesome": "^1.6.1",
-    "react-redux": "^5.0.7",
-    "react-router": "^4.2.0",
-    "react-router-dom": "^4.2.2",
-    "react-router-redux": "^4.0.8",
-    "redux": "^3.7.2"
+    "parcel-bundler": "^1.10.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "jest": "^23.6.0"
   }
 }
