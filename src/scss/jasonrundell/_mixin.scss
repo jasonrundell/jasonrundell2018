@@ -1,0 +1,313 @@
+// Breakpoints
+@mixin breakpoint($point) {
+  @if $point == xs {
+    @media (min-width: 480px)  { @content ; }
+  }
+  @else if $point == sm {
+    @media (min-width: 768px)  { @content ; }
+  }
+  @else if $point == md {
+    @media (min-width: 1024px) { @content ; }
+  }
+  @else if $point == lg {
+    @media (min-width: 1366px) { @content ; }
+  }
+  @else if $point == xl {
+    @media (min-width: 1500px) { @content ; }
+  }
+}
+
+// Grid
+@mixin basic-styles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //color: white;
+  //font-family: Arial;
+  //font-size: 48px;
+  //font-weight: bold;
+}
+
+@mixin display-grid {
+  display: -ms-grid;
+  display: grid;
+}
+
+@mixin grid-child ($col-start, $col-end, $row-start, $row-end) {
+  -ms-grid-column: $col-start;
+  -ms-grid-column-span: $col-end - $col-start;
+  -ms-grid-row: $row-start;
+  -ms-grid-row-span: $row-end - $row-start;
+  grid-column: #{$col-start}/#{$col-end};
+  grid-row: #{$row-start}/#{$row-end};
+}
+
+.grid-parent {
+  @include display-grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 100px 100px;
+  grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+  //border: 10px solid tomato;
+  //padding: 10px;
+  margin-left: $size_md;
+}
+
+.grid-child {
+  @include basic-styles;
+}
+
+.grid-child {
+  &:not(:nth-child(n+4)) {
+    margin-bottom: $size_md;
+  }
+  &:not(:nth-child(3n)) {
+    margin-right: $size_md;
+  }
+}
+@supports (display: grid) {
+  .grid-child {
+    grid-gap: $size_md;
+    margin-right: $size_md;
+    margin-bottom: $size_md;
+  }
+}
+
+
+// Headings
+@mixin heading {
+  font-family: $font_sans_serif;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-top: 2em;
+  margin-bottom: .5em;
+  @include transition (all, 0.5s, ease);
+  @include breakpoint(md){
+    line-height: 1.2;
+  }
+}
+
+@mixin heading-1 {
+  @include heading;
+  font-size: $font_size_h1;
+}
+@mixin heading-2 {
+  @include heading;
+  font-size: $font_size_h2;
+}
+@mixin heading-3 {
+  @include heading;
+  font-size: $font_size_h3;
+}
+@mixin heading-4 {
+  @include heading;
+  font-size: $font_size_h4;
+}
+@mixin heading-5 {
+  @include heading;
+  font-size: $font_size_h5;
+}
+@mixin heading-6 {
+  @include heading;
+  font-size: $font_size_h6;
+}
+
+
+// Links
+// Use @include links($link, $visited, $hover, $focus, $active);
+// For example @include links($color_link, $color_link, $color_second, $color_second, $color_second_900);
+@mixin links($link, $visited, $hover, $focus, $active) {
+  & {
+    color: $link;
+    text-decoration: none;
+    &:visited {
+      color: $visited;
+    }
+    &:hover {
+      color: $hover;
+      text-decoration: underline;
+    }
+    &:focus {
+      color: $focus
+    }
+    &:active  {
+      color: $active;
+    }
+  }
+}
+
+
+// Radius
+@mixin border-radius($radius: $size_md / 4) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+// Text
+@mixin text-align($position) {
+  text-align: $position;
+}
+
+// Size
+// If height is not defined, it will reuse width
+// @include size(200px);
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+/* @include width(100); */
+@mixin width($size:100) {
+  width: $size_100;
+  @if ($size==10) {
+    width: $size_10;
+  } @else if ($size==20) {
+    width: $size_20;
+  } @else if ($size==30) {
+    width: $size_30;
+  } @else if ($size==40) {
+    width: $size_40;
+  } @else if ($size==50) {
+    width: $size_50;
+  } @else if ($size==60) {
+    width: $size_60;
+  } @else if ($size==70) {
+    width: $size_70;
+  } @else if ($size==80) {
+    width: $size_80;
+  } @else if ($size==90) {
+    width: $size_90;
+  } @else if ($size==100) {
+    width: $size_100;
+  }
+}
+
+// Alignment via https://css-tricks.com/snippets/sass/centering-mixin/
+@mixin center($pos:both ) {
+  position: absolute;
+  @if ($pos==both) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } @else if ($pos==top) {
+    left: 50%;
+    transform: translate(-50%, 0);
+  } @else if ($pos==left) {
+    top: 50%;
+    transform: translate(0, -50%);
+  } @else if ($pos==right) {
+    top: 50%;
+    right:0;
+    transform: translate(0, -50%);
+  } @else if ($pos==bottom) {
+    bottom: 0;
+    left:50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+// Navigation
+@mixin nav-main {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    > li{
+        display:block;
+        float:left;
+        &:last-child{
+            margin-right:0px;
+        }
+    }
+}
+
+
+// Float
+@mixin float-left {
+  @include float(left);
+}
+@mixin float-right {
+  @include float(right);
+}
+@mixin float-reset($display: block) {
+  float: none;
+  @if support-legacy-browser("ie", "6", $threshold: $legacy-float-support-threshold) {
+    display: $display;
+  }
+}
+
+// Margin via http://www.tutorialsteacher.com/sass/sass-mixins
+@mixin margin-mix($margin...) {
+  margin: $margin;
+}
+
+// Padding (same as above)
+@mixin padding-mix($padding...) {
+  padding: $padding;
+}
+
+
+// Lists via https://www.brandongparker.com/category/code/csssassscssless/
+@mixin list-reset {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+// Transitions and animations
+// https://responsivedesign.is/articles/helpful-sass-mixins/
+/* @include transition(all,2s,ease-out); */
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition:    $what $time $how;
+  -ms-transition:     $what $time $how;
+  -o-transition:      $what $time $how;
+  transition:         $what $time $how;
+}
+
+
+// Animation
+// Example use: @include animation(10s, 5s, ease-in-out, infinite, bounce)
+@mixin animation ($delay, $duration, $function, $iteration) {
+  -webkit-animation-delay: $delay;
+  -webkit-animation-duration: $duration;
+  -webkit-animation-fill-mode: both;
+  -webkit-animation-timing-function: $function;
+  -webkit-animation-iteration-count: $iteration;
+
+  -moz-animation-delay: $delay;
+  -moz-animation-duration: $duration;
+  -moz-animation-fill-mode: both;
+  -moz-animation-timing-function: $function;
+  -moz-animation-iteration-count: $iteration;
+
+  -o-animation-delay: $delay;
+  -o-animation-duration: $duration;
+  -o-animation-fill-mode: both;
+  -o-animation-timing-function: $function;
+  -o-animation-iteration-count: $iteration;
+
+  animation-delay: $delay;
+  animation-duration: $duration;
+  animation-fill-mode: both;
+  animation-timing-function: $function;
+  animation-iteration-count: $iteration;
+}
+@mixin animation-name ($animation) {
+  -webkit-animation-name: $animation;
+  -moz-animation-name: $animation;
+  -o-animation-name: $animation;
+  animation-name: $animation;
+}
+
+
+// Clearfix
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

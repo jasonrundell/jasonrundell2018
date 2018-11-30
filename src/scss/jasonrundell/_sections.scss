@@ -1,0 +1,21 @@
+// Sections
+.section {
+  padding-top: $size_md * 8;
+  padding-bottom: $size_md * 8;
+  @include transition (all, 0.5s, ease);
+  @include clearfix;
+}
+.section-keynote {
+  padding-top: 0;
+}
+.section-resume {
+  background-color: $color_bg_prime_dark;
+}
+.section-contact {
+  padding-top: $size_md * 4;
+  padding-bottom: $size_md * 4;
+}
+.section-copyright {
+  padding-top: 0;
+  padding-bottom: $size_md * 4;
+}

@@ -1,0 +1,33 @@
+// Z-index layers
+// https://short.is/handling-zindex-with-sass
+// Create a list of elements that need a z-index value.
+$z: (
+  'background',
+  'errrthang',
+  'site-header'
+);
+
+// Create a function that gets the values from the list.
+@function z($value) {
+  @if index($z, $value) {
+    @return index($z, $value);
+  }
+  @warn '#{$value} is not included in the $z list.';
+}
+
+// Use.
+// z-index: z(header); // 2
+
+
+main {
+  z-index: 1;
+}
+section {
+  z-index: 2;
+}
+header {
+  z-index: 3;
+}
+.site-header {
+  z-index: 4;
+}

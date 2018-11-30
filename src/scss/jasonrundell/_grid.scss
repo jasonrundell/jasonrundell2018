@@ -1,0 +1,91 @@
+@mixin row() {
+  font-size: 0;
+}
+@mixin col ($col, $sum, $gap: 1em, $align: top, $first: false, $last: false) {
+  width: 100%;
+  display: inline-block;
+  //font-size: 16px;
+  padding-left: if($first, 0, $gap);
+  padding-right: if($last, 0, $gap);
+  @include breakpoint(sm){
+    width: percentage($col/$sum);
+          vertical-align: $align;
+  }
+  &.fluid { width: percentage($col/$sum); }
+}
+.row {
+  @include row;
+}
+.col-1-3 {
+  @include col(1, 3);
+}
+.col-2-3 {
+  @include col(2, 3);
+}
+
+
+// Grid 3 columns
+.grid3 {  
+  .col {
+    width: 33%;
+    float: left;
+    position: relative;
+    &:last-child {
+      //margin-right: 0;
+    }
+    &:last-of-type:before,
+    &:last-of-type:after,
+    &:nth-child(3n):before,
+    &:nth-child(3n):after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+    }
+    &:last-of-type:after,
+    &:nth-child(3n):after {
+      clear: both;
+    }
+  }
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+// Grid 3 columns
+.grid4 {  
+  .col {
+    text-align: center;
+    width: 25%;
+    float: left;
+    position: relative;
+    &:last-child {
+      //margin-right: 0;
+    }
+    &:last-of-type:before,
+    &:last-of-type:after,
+    &:nth-child(4n):before,
+    &:nth-child(4n):after {
+      content: " "; /* 1 */
+      display: table; /* 2 */
+    }
+    &:last-of-type:after,
+    &:nth-child(4n):after {
+      clear: both;
+    }
+  }
+  &:before,
+  &:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
