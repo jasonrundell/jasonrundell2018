@@ -16,13 +16,20 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dropship-components": "github:jasonrundell/dropship-components#feature/1.0.0",
+    "babel-polyfill": "^6.26.0",
     "history": "^4.7.2",
     "parcel-bundler": "^1.10.3",
     "react": "^16.6.3",
     "react-dom": "^16.6.3"
   },
   "devDependencies": {
-    "jest": "^23.6.0"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "jest": "^23.6.0",
+    "sass": "^1.15.1"
   }
 }
