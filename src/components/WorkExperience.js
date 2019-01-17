@@ -9,7 +9,7 @@ const AOS_CONFIG = {
 const POSITIONS = [
   {
     role: 'Business Owner',
-    company_name: 'Code Summoner',
+    company_name: 'Code Summoner Corp.',
     start_date: 'April 2012',
     end_date: 'Present'
   },
