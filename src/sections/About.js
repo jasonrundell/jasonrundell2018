@@ -13,7 +13,7 @@ const About = () =>
       <WorkExperience />
       <References />
       <p data-aos="fade" data-aos-duration="300">
-        <a href={CONFIG.fileUploadPath + CONFIG.resumeFileName} rel="pdf">Download r&eacute;sum&eacute;_</a>
+        <a href={CONFIG.fileUploadPath + CONFIG.resumeFileName}>Download r&eacute;sum&eacute;_</a>
       </p>
     </div>
   </section>
