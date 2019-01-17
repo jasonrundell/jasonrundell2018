@@ -7,7 +7,7 @@ import About from './sections/About';
 const Home = () =>
   <div>
     <GlobalHeader />
-    <main role="main">
+    <main>
       <Welcome />
       <About />
     </main>
