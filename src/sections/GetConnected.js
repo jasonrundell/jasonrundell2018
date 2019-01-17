@@ -6,12 +6,12 @@ const GetConnected = () =>
     <p>Got an interesting project in mind and want to learn more? Let's get in touch, <a href="mailto:contact@jasonrundell.com" rel="email">contact@jasonrundell.com</a>.</p>
     <ul>
       <li>
-        <a href="https://github.com/jasonrundell" rel="external ext" target="_blank">
+        <a href="https://github.com/jasonrundell" rel="external" target="_blank">
           <div className="contact-title">Github</div>
         </a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/jasonrundell/" rel="external ext" target="_blank">
+        <a href="https://www.linkedin.com/in/jasonrundell/" rel="external" target="_blank">
           <div className="contact-title">Linkedin</div>
         </a>
       </li>
