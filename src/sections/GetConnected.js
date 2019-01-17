@@ -3,7 +3,7 @@ import React from 'react';
 const GetConnected = () =>
   <section id="contact" className="section section-contact contain" data-aos="fade" data-aos-duration="600">
     <h2 className="section-title">Get connected</h2>
-    <p>Got an interesting project in mind and want to learn more? Let's get in touch, <a href="mailto:contact@jasonrundell.com" rel="email">contact@jasonrundell.com</a>.</p>
+    <p>Got an interesting project in mind and want to learn more? Let's get in touch, <a href="mailto:contact@jasonrundell.com">contact@jasonrundell.com</a>.</p>
     <ul>
       <li>
         <a href="https://github.com/jasonrundell" rel="external" target="_blank">
