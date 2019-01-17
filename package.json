@@ -9,8 +9,9 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "parcel ./src/index.html",
-    "build": "parcel build ./src/index.html --public-url ./"
+    "start": "npm run clean && parcel ./src/index.html",
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && parcel build ./src/index.html --public-url ./"
   },
   "keywords": [],
   "author": "",
@@ -30,6 +31,7 @@
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.8.0",
     "jest": "^23.6.0",
+    "rimraf": "^2.6.3",
     "sass": "^1.15.1"
   }
 }
