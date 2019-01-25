@@ -156,6 +156,58 @@ a { @include links($color_accent, $color_accent, $color_accent_100, $color_accen
   }
 }
 
+
+// Keynote
+.keynote {
+  font-size: 1.25em;
+  //margin-bottom: $size_md * 4;
+  font-weight: 300;
+  //text-align: center;
+  @include breakpoint(sm){
+    text-align: left;
+  }
+  @include breakpoint(md){
+    font-size: 1.25em;
+  }
+  @include breakpoint(lg){
+
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+.keynote-text {
+  p {
+    font-family: $font_sans_serif;
+  }
+  @include breakpoint(lg){
+    width: $size_md * 36;
+    margin-top: $size_md;
+  }
+  @include breakpoint(xl){
+    margin-top:0;
+  }
+}
+.keynote-subtitle {
+  margin-bottom: $size_md * 2;
+  font-weight: 300;
+}
+.keynote-desc {
+  color: #984863;
+  padding-top: $size_md * 4;
+  padding-bottom: $size_md * 10;
+}
+.keynote-icons {
+  text-align: center;
+  color: $color_prime_600;
+  text-align: center;
+  margin-top: $size_md * 2;
+}
+.keynote-icons-title {
+  font-size: .8em;
+  line-height: 1;
+}
+
 .readable {
   @include breakpoint(md){
     width: $size_md * 36;
@@ -314,6 +366,7 @@ a { @include links($color_accent, $color_accent, $color_accent_100, $color_accen
 }
 
 .quote {
+  position: relative;
   margin: 0 auto $size_lg * 2 auto;
   blockquote {
     margin: $size_lg 0;
