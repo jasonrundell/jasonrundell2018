@@ -4,7 +4,7 @@ import UnorderedList from './UnorderedList';
 const AOS_CONFIG = {
   type: 'fade',
   duration: 300,
-  delay: 600
+  delay: 100
 }
 
 const skillKeywords = [

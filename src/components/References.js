@@ -3,8 +3,8 @@ import CONFIG from '../config';
 
 const AOS_CONFIG = {
   type: 'fade',
-  duration: 600,
-  delay: 300
+  duration: 300,
+  delay: 100
 }
 
 const REFERENCES = [
@@ -44,7 +44,7 @@ const List = (props) => {
 
 const References = () =>
   <React.Fragment>
-    <h3 className="subsection-title" data-aos="fade" data-aos-duration="600" data-aos-delay="300">References</h3>
+    <h3 className="subsection-title" data-aos="fade" data-aos-duration="300" data-aos-delay="100">References</h3>
     <div className="quote">
       <List
         items={REFERENCES}
