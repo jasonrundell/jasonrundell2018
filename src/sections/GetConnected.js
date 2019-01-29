@@ -1,7 +1,7 @@
 import React from 'react';
 
 const GetConnected = () =>
-  <section id="contact" className="section section-contact contain" data-aos="fade" data-aos-duration="600">
+  <section id="contact" className="section section-contact contain" data-aos="fade" data-aos-duration="300">
     <h2 className="section-title">Get connected</h2>
     <ul>
       <li>

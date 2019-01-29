@@ -2,8 +2,8 @@ import React from 'react';
 
 const AOS_CONFIG = {
   type: 'fade',
-  duration: 600,
-  delay: 300
+  duration: 300,
+  delay: 100
 }
 
 const POSITIONS = [
@@ -68,7 +68,7 @@ const List = (props) => {
 
 const WorkExperience = () =>
   <React.Fragment>
-    <h3 className="subsection-title" data-aos="fade" data-aos-duration="600" data-aos-delay="300">Experience</h3>
+    <h3 className="subsection-title" data-aos="fade" data-aos-duration="300" data-aos-delay="100">Experience</h3>
     <List
       className="list-xp"
       items={POSITIONS}

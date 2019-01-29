@@ -1,10 +1,12 @@
 // Colours
 $white: #fff;
 $black: #000;
+
 // Background
 $color_bg_prime:  #232f3e;
 $color_bg_prime_dark: #1c2531;
 $color_bg_prime_darker: #151c25;
+
 // Prime (blue)
 $color_prime: #232f3e;
 $color_prime_10: #f3f4f6; //2a2f37
@@ -23,6 +25,7 @@ $color_prime_600: #1c2531;
 $color_prime_700: #151c25;
 $color_prime_800: #0e1218;
 $color_prime_900: #07090c;
+
 // Accent (gold)
 $color_accent: #e9be62;
 $color_accent_darker: #cc006c;
@@ -42,6 +45,7 @@ $color_accent_600: #e4b040;
 $color_accent_700: #dea11f;
 $color_accent_800: #bb881a;
 $color_accent_900: #996f15;
+
 // Second
 $color_second: #1e41e9;
 $color_second_10: #f4f6fe;
@@ -58,6 +62,7 @@ $color_second_600: #1434cc;
 $color_second_700: #102ba8;
 $color_second_800: #0d2284;
 $color_second_900: #091861;
+
 // Neutral gray
 $color_gray: rgba(48,48,48,1);
 $color_gray_10: rgba(244,244,244,1);
@@ -74,6 +79,7 @@ $color_gray_600: rgba(38,38,38,1);
 $color_gray_700: rgba(28,28,28,1);
 $color_gray_800: rgba(19,19,19,1);
 $color_gray_900: rgba(9,9,9,1);
+
 // Cool gray
 $color_gray_cool: #abaebd;
 $color_gray_cool_10: #f8f8f9;
@@ -90,6 +96,7 @@ $color_gray_cool_600: #f8f8f9;
 $color_gray_cool_700: #edeef1;
 $color_gray_cool_800: #e2e3e8;
 $color_gray_cool_900: #d7d8e0;
+
 // Warm gray
 $color_gray_warm: #c5bfb3;
 $color_gray_warm_10: #f8f7f6;
@@ -107,13 +114,9 @@ $color_gray_warm_700: #edeef1;
 $color_gray_warm_800: #e2e3e8;
 $color_gray_warm_900: #d7d8e0;
 
-
-
-
 // Link
 $color_link: $color_accent;
 $color_link_darker: $color_accent_700;
-
 
 // Typography
 $font_sans_serif: 'Montserrat', 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, sans-serif;
@@ -121,7 +124,6 @@ $font_sans_serif2: 'IBM Plex Mono', 'HelveticaNeue-Light', 'Helvetica Neue Light
 $font_serif: 'Cutive Mono', 'Baskerville', 'Times New Roman', 'Times', serif;
 $font_size_base: 125%; // 20px // 112.5%; // 18px
 $line_height_base: 1.5; // 30px
-
 
 // Utilities
 $size_none: 0;

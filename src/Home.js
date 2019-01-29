@@ -5,13 +5,13 @@ import Welcome from './sections/Welcome';
 import About from './sections/About';
 
 const Home = () =>
-  <div>
+  <React.Fragment>
     <GlobalHeader />
     <main>
       <Welcome />
       <About />
     </main>
     <GlobalFooter />
-  </div>
+  </React.Fragment>
 
 export default Home;
