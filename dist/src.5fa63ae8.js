@@ -704,7 +704,7 @@ var e=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0});var n=
 },{"react":"1n8/","object-assign":"J4Nk","scheduler":"MDSO"}],"NKHc":[function(require,module,exports) {
 "use strict";function _(){if("undefined"!=typeof __REACT_DEVTOOLS_GLOBAL_HOOK__&&"function"==typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE){0;try{__REACT_DEVTOOLS_GLOBAL_HOOK__.checkDCE(_)}catch(O){console.error(O)}}}_(),module.exports=require("./cjs/react-dom.production.min.js");
 },{"./cjs/react-dom.production.min.js":"i17t"}],"4itQ":[function(require,module,exports) {
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e={fileUploadPath:"http://jasonrundell.com/files/",resumeFileName:"jason-rundell-web-developer-resume.pdf"},l=e;exports.default=l;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e={fileUploadPath:"https://s3.amazonaws.com/jasonrundell.com/files/",resumeFileName:"jason-rundell-web-developer-resume.pdf"},s=e;exports.default=s;
 },{}],"ILnJ":[function(require,module,exports) {
 "use strict";Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=void 0;var e=t(require("react")),a=t(require("../config"));function t(e){return e&&e.__esModule?e:{default:e}}var l=function(){return e.default.createElement("header",{className:"header"},e.default.createElement("div",{className:"site-header scrollheader"},e.default.createElement("div",{className:"contain"},e.default.createElement("a",{href:"#main",className:"link-skip"},"Skip to main content"),e.default.createElement("nav",{className:"nav-header"},e.default.createElement("ul",{className:"nav-main"},e.default.createElement("li",null,e.default.createElement("a",{href:a.default.fileUploadPath+a.default.resumeFileName},"Download résumé_")))))))},r=l;exports.default=r;
 },{"react":"1n8/","../config":"4itQ"}],"UHdi":[function(require,module,exports) {
@@ -734,4 +734,4 @@ var e=arguments[3];Object.defineProperty(exports,"__esModule",{value:!0});var n=
 },{"react":"1n8/","./Home":"rLgC","./scss/styles.scss":"mAbx"}],"Focm":[function(require,module,exports) {
 "use strict";require("babel-polyfill");var e=u(require("react")),r=require("react-dom"),t=u(require("./App"));function u(e){return e&&e.__esModule?e:{default:e}}(0,r.render)(e.default.createElement(t.default,null),document.getElementById("root"));
 },{"babel-polyfill":"wllv","react":"1n8/","react-dom":"NKHc","./App":"lY9v"}]},{},["Focm"], null)
-//# sourceMappingURL=src.c1bc12f0.map
+//# sourceMappingURL=src.5fa63ae8.map
