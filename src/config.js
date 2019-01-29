@@ -1,5 +1,5 @@
 const APP_CONFIG = {
-  fileUploadPath: 'http://jasonrundell.com/files/',
+  fileUploadPath: 'https://s3.amazonaws.com/jasonrundell.com/files/',
   resumeFileName: 'jason-rundell-web-developer-resume.pdf'
 }
 
