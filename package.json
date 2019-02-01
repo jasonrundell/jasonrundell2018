@@ -12,13 +12,15 @@
     "start": "npm run clean && npm run copy-static-files && parcel ./src/index.html",
     "clean": "rimraf ./dist && shx mkdir ./dist",
     "copy-static-files": "shx cp ./src/favicon.ico ./dist/favicon.ico && shx cp ./src/icon.png ./dist/icon.png && shx cp ./src/robots.txt ./dist/robots.txt && shx cp -r ./src/password ./dist/password&& shx cp ./src/site.webmanifest ./dist/site.webmanifest",
-    "build": "npm run clean && npm run copy-static-files && parcel build ./src/index.html --public-url ./",
-    "stylelint": "stylelint 'src/scss/**/*.scss'"
+    "build": "npm run clean && npm run copy-static-files && parcel build ./src/index.html --public-url ./ && npm run purifycss",
+    "stylelint": "stylelint 'src/scss/**/*.scss'",
+    "purifycss": "purifycss dist/src.*.css dist/src.*.js --min --info --out dist/src.final.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aos": "^2.3.4",
     "babel-polyfill": "^6.26.0",
     "history": "^4.7.2",
     "parcel-bundler": "^1.10.3",
@@ -31,6 +33,7 @@
     "babel-preset-env": "^1.6.1",
     "eslint": "^5.12.1",
     "jest": "^23.6.0",
+    "purifycss": "^1.2.6",
     "rimraf": "^2.6.3",
     "sass": "^1.15.1",
     "shx": "^0.3.2"
