@@ -53,8 +53,8 @@ const POSITIONS = [
 
 const List = (props) => {
   const items = props.items;
-  const listItems = items.map((item) =>
-    <li key={item.toString()} className={props.classNameChildren} data-aos={props.aosType} data-aos-duration={props.aosDuration} data-aos-delay={props.aosDelay}>
+  const listItems = items.map((item, index) =>
+    <li key={index} className={props.classNameChildren} data-aos={props.aosType} data-aos-duration={props.aosDuration} data-aos-delay={props.aosDelay}>
       <strong>{ item.role }</strong><br />
       <em>{ item.company_name }</em><br />
       <small>{ item.start_date } - { item.end_date }</small>

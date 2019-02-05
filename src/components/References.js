@@ -30,9 +30,9 @@ const REFERENCES = [
 
 const List = (props) => {
   const items = props.items;
-  const listItems = items.map((item) =>
-    <React.Fragment>
-      <blockquote key={item.toString()} cite={ item.cite_url } className={props.className} data-aos={props.aosType} data-aos-duration={props.aosDuration} data-aos-delay={props.aosDelay}>
+  const listItems = items.map((item, index) =>
+    <React.Fragment key={index}>
+      <blockquote cite={ item.cite_url } className={props.className} data-aos={props.aosType} data-aos-duration={props.aosDuration} data-aos-delay={props.aosDelay}>
         { item.quote }
       </blockquote>
       <cite>- { item.cite_name } ({ item.company_name })</cite>

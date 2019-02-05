@@ -4,8 +4,8 @@ import Li from './Li';
 
 const UnorderedList = (props) => {
   const items = props.items;
-  const listItems = items.map((item) =>
-    <Li key={item.toString()} className={props.classNameChildren} data-aos={props.aosType} data-aos-duration={props.aosDuration} data-aos-delay={props.aosDelay}>{item}</Li>
+  const listItems = items.map((item, index) =>
+    <Li key={index} className={props.classNameChildren} data-aos={props.aosType} data-aos-duration={props.aosDuration} data-aos-delay={props.aosDelay}>{item}</Li>
   );
 
   return(

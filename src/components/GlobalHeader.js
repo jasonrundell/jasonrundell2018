@@ -1,5 +1,6 @@
 import React from 'react';
 import CONFIG from '../config';
+import DownloadResumeButton from './DownloadResumeButton';
 
 const GlobalHeader = () =>
   <header className="header">
@@ -8,7 +9,9 @@ const GlobalHeader = () =>
         <a href="#main" className="link-skip">Skip to main content</a>
         <nav className="nav-header">
           <ul className="nav-main">
-            <li><a href={CONFIG.fileUploadPath + CONFIG.resumeFileName}>Download r&eacute;sum&eacute;_</a></li>
+            <li>
+              <DownloadResumeButton />
+            </li>
           </ul>
         </nav>
       </div>
