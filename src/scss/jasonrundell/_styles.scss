@@ -302,35 +302,6 @@ a { @include links($color_accent, $color_accent, $color_accent_100, $color_accen
   li {
     display: inline-block;
   }
-  a {
-    display: inline-block;
-    font-size: $size_md;
-    line-height: $size_sm;
-    padding: $size_sm;
-    background: $color_prime;
-    border: 1px solid $color_prime_300;
-    @include border-radius ($size_xs/4);
-    @include transition (all, 0.5s, ease);
-    @include animation (0, 1000ms, linear, 1);
-    @include breakpoint(md){
-      font-size: $size_md;
-    }
-    &:link, &:visited, &:hover, &:focus, &:active {
-      color: $color_accent;
-      text-decoration: none;
-    }
-    &:hover, &:focus {
-      background: $color_prime_600;
-      border-color: $color_accent;
-    }
-    &:active {
-      color: $color_accent_600;
-      background: $color_prime_700;
-    }
-    &.active {
-      color: $color_accent_600;
-    }
-  }
 }
 
 

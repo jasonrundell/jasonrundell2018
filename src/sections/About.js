@@ -1,5 +1,4 @@
 import React from 'react';
-import CONFIG from '../config';
 import Skills from '../components/Skills';
 import WorkExperience from '../components/WorkExperience';
 import References from '../components/References';
@@ -12,9 +11,6 @@ const About = () =>
       <Skills />
       <WorkExperience />
       <References />
-      <p data-aos="fade" data-aos-duration="300">
-        <a href={CONFIG.fileUploadPath + CONFIG.resumeFileName}>Download r&eacute;sum&eacute;_</a>
-      </p>
     </div>
   </section>
 
