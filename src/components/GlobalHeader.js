@@ -1,5 +1,4 @@
 import React from 'react';
-import CONFIG from '../config';
 import DownloadResumeButton from './DownloadResumeButton';
 
 const GlobalHeader = () =>
