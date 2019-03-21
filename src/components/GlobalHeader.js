@@ -3,7 +3,7 @@ import DownloadResumeButton from './DownloadResumeButton';
 
 const GlobalHeader = () =>
   <header className="header">
-    <div className="site-header scrollheader">
+    <div className="site-header">
       <div className="contain">
         <a href="#main" className="link-skip">Skip to main content</a>
         <nav className="nav-header">

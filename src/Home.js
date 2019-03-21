@@ -7,7 +7,7 @@ import About from './sections/About';
 const Home = () =>
   <React.Fragment>
     <GlobalHeader />
-    <main>
+    <main id="main">
       <Welcome />
       <About />
     </main>
