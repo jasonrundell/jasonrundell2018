@@ -1,0 +1,1 @@
+{"version":3,"sources":["serviceworker.js"],"names":["self","addEventListener","event"],"mappings":";AAAAA,KAAKC,iBAAiB,UAAW,SAAUC,MAC3CF,KAAKC,iBAAiB,QAAS,SAAUC","file":"serviceworker.map","sourceRoot":"..\\src","sourcesContent":["self.addEventListener('install', function (event) {});\nself.addEventListener('fetch', function (event) {});\n"]}
