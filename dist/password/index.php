@@ -9,10 +9,19 @@ function randomPassword($length) {
     }
     return implode($pass); //turn the array into a string
 }
+
+$password = randomPassword(8);
 if (isset($_GET['length'])) {
-  echo randomPassword($_GET['length']);
-} else {
-  echo randomPassword(8);
+  $password = randomPassword($_GET['length']);
 }
-
-
+?>
+<pre>
+<?php echo $password; ?>
+</pre>
+<hr />
+<ul>
+  <li><a href="?length=12">12 character password</a></li>
+  <li><a href="?length=16">16 character password</a></li>
+  <li><a href="?length=24">24 character password</a></li>
+  <li><a href="?length=32">32 character password</a></li>
+</ul>
