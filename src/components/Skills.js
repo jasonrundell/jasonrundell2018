@@ -15,6 +15,7 @@ const skillKeywords = [
   'JavaScript',
   'JSON',
   'jQuery',
+  'Progessive Web Apps (PWA)',
   'Amazon Web Services (AWS)',
   'Amazon EC2',
   'Amazon RDS',
