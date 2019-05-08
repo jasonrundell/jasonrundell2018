@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Home from './Home';
 import './scss/styles.scss';
 
@@ -11,6 +11,7 @@ const NoMatch = ({ location }) =>
           <h1>
             404 - Page not found for <code>{location.pathname}</code>
           </h1>
+          <p><Link to="/">Return to Home</Link></p>
         </div>
       </section>
     </main>
