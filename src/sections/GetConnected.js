@@ -5,17 +5,13 @@ const GetConnected = () =>
     <h2 className="section-title">Get connected</h2>
     <ul>
       <li>
-        <a href="mailto:contact@jasonrundell.com">contact@jasonrundell.com</a>
+        <a href="mailto:contact@jasonrundell.com" className="link">contact@jasonrundell.com</a>
       </li>
       <li>
-        <a href="https://github.com/jasonrundell" rel="external" target="_blank">
-          <div className="contact-title">Github</div>
-        </a>
+        <a href="https://github.com/jasonrundell" className="link" rel="noreferrer" target="_blank">GitHub</a>
       </li>
       <li>
-        <a href="https://www.linkedin.com/in/jasonrundell/" rel="external" target="_blank">
-          <div className="contact-title">Linkedin</div>
-        </a>
+        <a href="https://www.linkedin.com/in/jasonrundell/" className="link" rel="noreferrer" target="_blank">LinkedIn</a>
       </li>
     </ul>
   </section>
