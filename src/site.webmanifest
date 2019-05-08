@@ -3,15 +3,20 @@
   "dir": "ltr",
   "name": "jasonrundell.com",
   "short_name": "jasonrundell.com",
-  "start_url": "/",
+  "start_url": "/?isPWA=true",
   "display": "standalone",
   "background_color": "#232f3e",
   "theme_color": "#151c25",
   "icons": [
     {
-      "src": "icon.png",
+      "src": "icon192x192.png",
       "type": "image/png",
       "sizes": "192x192"
+    },
+    {
+      "src": "icon512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
     }
   ]
 }
