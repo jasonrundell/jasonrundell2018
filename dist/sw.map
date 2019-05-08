@@ -1,1 +1,0 @@
-{"version":3,"sources":["sw.js"],"names":["self","addEventListener","event"],"mappings":";AAAAA,KAAKC,iBAAiB,UAAW,SAAUC,MAC3CF,KAAKC,iBAAiB,QAAS,SAAUC","file":"sw.map","sourceRoot":"..\\src","sourcesContent":["self.addEventListener('install', function (event) {});\nself.addEventListener('fetch', function (event) {});\n"]}
