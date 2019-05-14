@@ -14,37 +14,37 @@ const POSITIONS = [
     end_date: 'Present'
   },
   {
-    role: 'Full Stack Developer',
-    company_name: 'LoyaltyOne (AIR MILES & Squareknot)',
+    role: 'Full Stack Web Developer',
+    company_name: 'AIR MILES Marketing',
     start_date: 'August 2015',
     end_date: 'Present'
   },
   {
-    role: 'Front End Developer',
+    role: 'Front End Web Developer',
     company_name: 'MediResource Inc.',
     start_date: 'April 2014',
     end_date: 'December 2014'
   },
   {
-    role: 'Senior Web Developer (full stack)',
+    role: 'Senior Full Stack Web Developer',
     company_name: '52 Pick-Up Inc.',
     start_date: 'August 2013',
     end_date: 'February 2014'
   },
   {
-    role: 'Full stack developer (multiple positions)',
+    role: 'Full Stack Web Developer (multiple positions)',
     company_name: 'Flight Centre Ltd.',
     start_date: 'February 2009',
     end_date: 'March 2012'
   },
   {
-    role: 'Full stack developer (volunteer)',
+    role: 'Full Stack Web Developer (volunteer)',
     company_name: 'Project Peru',
     start_date: 'March 2008',
     end_date: 'September 2011'
   },
   {
-    role: 'Senior Web Developer (full stack)',
+    role: 'Senior Full Stack Web Developer',
     company_name: 'EZD Consulting Inc.',
     start_date: 'October 2001',
     end_date: 'August 2008'
