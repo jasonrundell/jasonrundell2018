@@ -12,9 +12,8 @@
     "start": "npm run clean && npm run copy-static-files && parcel ./src/index.html",
     "clean": "rimraf ./dist && shx mkdir ./dist",
     "copy-static-files": "shx cp ./src/robots.txt ./dist/robots.txt && shx cp -r ./src/password ./dist/password && shx cp -r ./src/time ./dist/time && shx cp -r ./src/files ./dist/files",
-    "build": "npm run clean && npm run copy-static-files && parcel build ./src/index.html && npm run purifycss",
+    "build": "npm run clean && npm run copy-static-files && parcel build ./src/index.html",
     "stylelint": "stylelint 'src/scss/**/*.scss'",
-    "purifycss": "purifycss dist/src.*.css dist/src.*.js --min --info --out dist/src.final.css"
   },
   "keywords": [],
   "author": "",
@@ -34,8 +33,8 @@
     "babel-preset-env": "^1.7.0",
     "eslint": "^5.16.0",
     "jest": "^24.8.0",
+    "parcel-plugin-purifycss": "^1.0.5",
     "parcel-plugin-sw-precache": "^1.1.1",
-    "purifycss": "^1.2.6",
     "rimraf": "^2.6.3",
     "sass": "^1.20.1",
     "shx": "^0.3.2"
