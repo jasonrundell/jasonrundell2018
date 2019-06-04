@@ -1,0 +1,5 @@
+.link {
+  display: block;
+  padding: 0.5rem;
+  @include links($color_accent, $color_accent, $color_accent_100, $color_accent_100, $color_accent_100, 'underline');
+}

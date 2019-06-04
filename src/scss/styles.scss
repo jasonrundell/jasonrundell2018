@@ -1,2 +1,240 @@
-@import 'jasonrundell';
-@import 'aos';
+@import "../../node_modules/normalize.css/normalize.css";
+@import "core";
+@import "vendor/aos";
+@import "components";
+
+html {
+  font-family: $font_sans_serif;
+  font-weight: 400;
+  font-size: 100%;
+  @include breakpoint(md) {
+    font-size: $font_size_base;
+  }
+}
+
+body {
+  position: relative;
+  line-height: $line_height_base;
+  background: $color_bg_prime;
+  color: $color_prime_60;
+  margin: $size_none;
+  padding: $size_none;
+  height: 100%;
+  width: 100%;
+}
+
+// Layout
+.contain {
+  margin: 0 auto;
+  padding: 0 $size_md * 3;
+  // width: 100%;
+  @include breakpoint(sm) {
+    padding: 0 $size_md * 8;
+  }
+  @include breakpoint(md) {
+    width: $size_md * 36;
+    padding: 0;
+  }
+  @include breakpoint(lg) {
+    width: $size_md * 42;
+  }
+  @include breakpoint(xl) {
+    width: $size_md * 54;
+  }
+  @include clearfix;
+}
+// Layout
+.contain-fluid {
+  width: 100%;
+  @include clearfix;
+}
+
+.page-title {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.3rem;
+  font-weight: 500;
+  @include breakpoint(md) {
+    font-size: 2.75rem;
+  }
+}
+.section-title {
+  margin-top: 0;
+}
+.subsection-title {
+  margin-top: $size_md * 4;
+}
+
+// Header
+
+.header {
+  height: $size_md * 5.25;
+  @include breakpoint(md) {
+    height: $size_md * 6;
+  }
+}
+.site-header {
+  background: linear-gradient(0deg, rgba(35, 47, 62, 0) 0%, rgba(26, 35, 46, 1) 100%);
+  display: block;
+  position: fixed;
+
+  width: 100%;
+  padding: $size_md $size_none;
+  @include transition(all, 0.5s, ease);
+  top: 0;
+  z-index: 99;
+}
+
+// footer
+.footer {
+  background-color: $color_bg_prime_darker;
+  color: $color_prime_70;
+}
+
+.copyright {
+  font-size: 0.85em;
+  @include breakpoint(md) {
+    font-size: 0.8em;
+  }
+}
+
+// Keynote
+.keynote {
+  font-size: 1.25em;
+  //margin-bottom: $size_md * 4;
+  font-weight: 300;
+  //text-align: center;
+  @include breakpoint(sm) {
+    text-align: left;
+  }
+  @include breakpoint(md) {
+    font-size: 1.25em;
+  }
+  @include breakpoint(lg) {
+  }
+  p:last-child {
+    margin-bottom: 0;
+    font-size: 0.75em;
+  }
+}
+.keynote-subtitle {
+  margin-bottom: $size_md * 2;
+  font-weight: 300;
+}
+
+// Lists
+.list-xp {
+  @include list-reset;
+  li {
+    margin-bottom: $size_md * 2;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.list-skills {
+  @include list-reset;
+  li {
+    display: inline;
+    @include transition(all, 0.5s, ease);
+    &:after {
+      color: $color_accent;
+      content: " + ";
+    }
+    &:last-child:after {
+      content: "";
+    }
+    &:hover {
+      color: $color_accent;
+    }
+  }
+}
+
+// Navigation
+.nav-header {
+  display: block;
+  float: right;
+}
+.nav-main {
+  clear: both;
+  @include list-reset;
+  margin-right: -$size_md;
+  @include breakpoint(md) {
+    margin-right: -$size_md;
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+// Skip
+.link-skip {
+  display: inline-block;
+  position: absolute;
+  left: -22rem;
+  font-size: $size_md;
+  line-height: $size_md;
+  color: $color_prime;
+  background-color: $color_accent;
+  padding: $size_xs;
+  @include border-radius(0 $size_md/4 $size_md/4 0);
+  @include transition(all, 0.5s, ease);
+  @include breakpoint(md) {
+    font-size: $size_md;
+    @include border-radius(0 $size_md/5 $size_md/5 0);
+  }
+  &:visited,
+  &:focus,
+  &:hover,
+  &:active {
+    color: $color_prime;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    left: 0;
+    background-color: $color_accent;
+  }
+  &:active {
+    background-color: $color_accent_600;
+  }
+}
+
+.quote {
+  position: relative;
+  margin: 0 auto $size_lg * 2 auto;
+  blockquote {
+    margin: $size_lg 0;
+    padding-right: $size_lg;
+    @include clearfix;
+    &:before,
+    &:after {
+      display: inline;
+      position: absolute;
+      font-family: $font_serif;
+      font-size: $size_lg * 2;
+      font-weight: 300;
+      color: $color_prime_400;
+    }
+    &:before {
+      content: "\275D";
+      top: -$size_lg;
+      left: -$size_lg * 1.5;
+    }
+    &:after {
+      content: "\275E";
+      right: -$size_lg;
+    }
+  }
+  cite {
+    margin-top: $size_md;
+    color: $color_accent_70;
+    font-style: normal;
+  }
+}
+
+// No line breaks
+.nowrap {
+  white-space: nowrap;
+}
