@@ -1,11 +1,6 @@
 import React from 'react';
 import UnorderedList from './UnorderedList';
-
-const AOS_CONFIG = {
-  type: 'fade',
-  duration: 300,
-  delay: 100,
-};
+import { AOS_CONFIG } from '../../config';
 
 const skillKeywords = [
   'MySQL',

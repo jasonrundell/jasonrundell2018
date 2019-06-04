@@ -37724,7 +37724,25 @@ if ("development" !== "production") {
     style: _propTypes.default.object
   });
 }
-},{"@babel/runtime/helpers/esm/inheritsLoose":"../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"../node_modules/react/index.js","react-router":"../node_modules/react-router/esm/react-router.js","history":"../node_modules/history/esm/history.js","prop-types":"../node_modules/prop-types/index.js","tiny-warning":"../node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"../node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"js/components/DownloadResumeButton.js":[function(require,module,exports) {
+},{"@babel/runtime/helpers/esm/inheritsLoose":"../node_modules/@babel/runtime/helpers/esm/inheritsLoose.js","react":"../node_modules/react/index.js","react-router":"../node_modules/react-router/esm/react-router.js","history":"../node_modules/history/esm/history.js","prop-types":"../node_modules/prop-types/index.js","tiny-warning":"../node_modules/tiny-warning/dist/tiny-warning.esm.js","@babel/runtime/helpers/esm/extends":"../node_modules/@babel/runtime/helpers/esm/extends.js","@babel/runtime/helpers/esm/objectWithoutPropertiesLoose":"../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js","tiny-invariant":"../node_modules/tiny-invariant/dist/tiny-invariant.esm.js"}],"config.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.AOS_CONFIG = exports.APP_CONFIG = void 0;
+var APP_CONFIG = {
+  downloadsPath: '/files/',
+  resumeFile: 'https://s3.amazonaws.com/jasonrundell.com/files/jason-rundell-web-developer-resume.pdf'
+};
+exports.APP_CONFIG = APP_CONFIG;
+var AOS_CONFIG = {
+  type: 'fade',
+  duration: 300,
+  delay: 100
+};
+exports.AOS_CONFIG = AOS_CONFIG;
+},{}],"js/components/DownloadResumeButton.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37734,15 +37752,13 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+var _config = require("../../config");
 
-// import CONFIG from '../config';
-// const resumeFile = 'jason-rundell-web-developer-resume.pdf';
-var resumeFile = 'https://s3.amazonaws.com/jasonrundell.com/files/jason-rundell-web-developer-resume.pdf';
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var DownloadResumeButton = function DownloadResumeButton() {
   return _react.default.createElement("a", {
-    href: resumeFile,
+    href: _config.APP_CONFIG.resumeFile,
     className: "button__download"
   }, "Download r\xE9sum\xE9", _react.default.createElement("svg", {
     className: "arrow-icon ml1",
@@ -37769,7 +37785,7 @@ var DownloadResumeButton = function DownloadResumeButton() {
 
 var _default = DownloadResumeButton;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"js/components/GlobalHeader.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../../config":"config.js"}],"js/components/GlobalHeader.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37812,14 +37828,17 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _config = require("../../config");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var GetConnected = function GetConnected() {
   return _react.default.createElement("section", {
     id: "contact",
     className: "section section-contact",
-    "data-aos": "fade",
-    "data-aos-duration": "300"
+    "data-aos": _config.AOS_CONFIG.type,
+    "data-aos-duration": _config.AOS_CONFIG.duration,
+    "data-aos-delay": _config.AOS_CONFIG.delay
   }, _react.default.createElement("div", {
     className: "contain"
   }, _react.default.createElement("h2", {
@@ -37830,19 +37849,19 @@ var GetConnected = function GetConnected() {
   }, "contact@jasonrundell.com")), _react.default.createElement("li", null, _react.default.createElement("a", {
     href: "https://github.com/jasonrundell",
     className: "link",
-    rel: "noreferrer",
+    rel: "noopener noreferrer",
     target: "_blank"
   }, "GitHub")), _react.default.createElement("li", null, _react.default.createElement("a", {
     href: "https://www.linkedin.com/in/jasonrundell/",
     className: "link",
-    rel: "noreferrer",
+    rel: "noopener noreferrer",
     target: "_blank"
   }, "LinkedIn")))));
 };
 
 var _default = GetConnected;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"js/components/GlobalFooter.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../../config":"config.js"}],"js/components/GlobalFooter.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37880,6 +37899,8 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _config = require("../../config");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var Welcome = function Welcome() {
@@ -37889,28 +37910,28 @@ var Welcome = function Welcome() {
     className: "contain"
   }, _react.default.createElement("h1", {
     className: "page-title",
-    "data-aos": "fade",
-    "data-aos-duration": "300",
-    "data-aos-delay": "100"
+    "data-aos": _config.AOS_CONFIG.type,
+    "data-aos-duration": _config.AOS_CONFIG.duration,
+    "data-aos-delay": _config.AOS_CONFIG.delay
   }, "Jason Rundell"), _react.default.createElement("p", {
     className: "keynote-subtitle",
-    "data-aos": "fade",
-    "data-aos-duration": "300",
-    "data-aos-delay": "100"
+    "data-aos": _config.AOS_CONFIG.type,
+    "data-aos-duration": _config.AOS_CONFIG.duration,
+    "data-aos-delay": _config.AOS_CONFIG.delay
   }, "Full Stack Web Developer"), _react.default.createElement("p", {
-    "data-aos": "fade",
-    "data-aos-duration": "300",
-    "data-aos-delay": "100"
+    "data-aos": _config.AOS_CONFIG.type,
+    "data-aos-duration": _config.AOS_CONFIG.duration,
+    "data-aos-delay": _config.AOS_CONFIG.delay
   }, "Yo! I'm a developer who loves learning and using the latest in front end web development. My skill set includes experience with React, Node.js, Gulp, Grunt, PHP, MySQL, SASS, CSS, HTML, JavaScript, and Amazon Web Services (just to name a few)."), _react.default.createElement("p", {
-    "data-aos": "fade",
-    "data-aos-duration": "300",
-    "data-aos-delay": "100"
+    "data-aos": _config.AOS_CONFIG.type,
+    "data-aos-duration": _config.AOS_CONFIG.duration,
+    "data-aos-delay": _config.AOS_CONFIG.delay
   }, "My love of building web experiences started in my high school\u2019s library in 1997 with GeoCities and it\u2019s been rewarding ever since! As you can imagine, with over 20 years of love for HTML, I have been a part of a wide variety of web projects: from iframes, to Flash, jQuery Mobile, and now \u2018isomorphic JavaScript applications\u2019. Whatever the latest trend is, I\u2019m either deeply involved or experimenting with it in my spare time and imagining what\u2019s next. My skills and experiences are deep, wide-ranging, and I am always seeking new best practices and methodologies. I embrace change, crave challenge, and love technology!")));
 };
 
 var _default = Welcome;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"js/components/Li.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../../config":"config.js"}],"js/components/Li.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -37977,13 +37998,10 @@ var _react = _interopRequireDefault(require("react"));
 
 var _UnorderedList = _interopRequireDefault(require("./UnorderedList"));
 
+var _config = require("../../config");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var AOS_CONFIG = {
-  type: 'fade',
-  duration: 300,
-  delay: 100
-};
 var skillKeywords = ['MySQL', 'SASS', 'CSS', 'HTML', 'JavaScript', 'JSON', 'jQuery', 'Progessive Web Apps (PWA)', 'Amazon Web Services (AWS)', 'Amazon EC2', 'Amazon RDS', 'Amazon Route 53', 'AngularJS', 'React', 'Redux', 'Node.js', 'NPM', 'Yarn', 'MySQL', 'Gulp', 'Grunt', 'Architecture', 'Project Management', 'Client Support', 'CodeIgniter', 'WordPress', 'Foundation', 'Bootstrap', 'Git', 'GitHub', 'Travis', 'Facebook API', 'Facebook Development', 'Google Maps API', 'Google Places API', 'PhoneGap Build', 'Documentation', 'Responsive Design', 'Accessibility', 'Adobe Photoshop', 'Adobe Illustrator'];
 skillKeywords.sort(function (a, b) {
   var nameA = a.toUpperCase(); // ignore upper and lowercase
@@ -38006,15 +38024,15 @@ var Skills = function Skills() {
   return _react.default.createElement(_UnorderedList.default, {
     className: "list-skills",
     items: skillKeywords,
-    aosType: AOS_CONFIG.type,
-    aosDuration: AOS_CONFIG.duration,
-    aosDelay: AOS_CONFIG.delay
+    aosType: _config.AOS_CONFIG.type,
+    aosDuration: _config.AOS_CONFIG.duration,
+    aosDelay: _config.AOS_CONFIG.delay
   });
 };
 
 var _default = Skills;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","./UnorderedList":"js/components/UnorderedList.js"}],"js/components/WorkExperience.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","./UnorderedList":"js/components/UnorderedList.js","../../config":"config.js"}],"js/components/WorkExperience.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38024,13 +38042,10 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
+var _config = require("../../config");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var AOS_CONFIG = {
-  type: 'fade',
-  duration: 300,
-  delay: 100
-};
 var POSITIONS = [{
   role: 'Business Owner',
   company_name: 'Code Summoner Corp.',
@@ -38081,42 +38096,30 @@ var List = function List(props) {
   });
   return _react.default.createElement("ul", {
     className: props.className,
-    "data-aos": props.aosType,
-    "data-aos-duration": props.aosDuration,
-    "data-aos-delay": props.aosDelay
+    "data-aos": _config.AOS_CONFIG.type,
+    "data-aos-duration": _config.AOS_CONFIG.duration,
+    "data-aos-delay": _config.AOS_CONFIG.delay
   }, listItems);
 };
 
 var WorkExperience = function WorkExperience() {
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h3", {
     className: "subsection-title",
-    "data-aos": "fade",
-    "data-aos-duration": "300",
-    "data-aos-delay": "100"
+    "data-aos": _config.AOS_CONFIG.type,
+    "data-aos-duration": _config.AOS_CONFIG.duration,
+    "data-aos-delay": _config.AOS_CONFIG.delay
   }, "Experience"), _react.default.createElement(List, {
     className: "list-xp",
     items: POSITIONS,
-    aosType: AOS_CONFIG.type,
-    aosDuration: AOS_CONFIG.duration,
-    aosDelay: AOS_CONFIG.delay
+    aosType: _config.AOS_CONFIG.type,
+    aosDuration: _config.AOS_CONFIG.duration,
+    aosDelay: _config.AOS_CONFIG.delay
   }));
 };
 
 var _default = WorkExperience;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js"}],"config.js":[function(require,module,exports) {
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.default = void 0;
-var APP_CONFIG = {
-  downloadsPath: '/files/'
-};
-var _default = APP_CONFIG;
-exports.default = _default;
-},{}],"js/components/References.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../../config":"config.js"}],"js/components/References.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -38126,28 +38129,20 @@ exports.default = void 0;
 
 var _react = _interopRequireDefault(require("react"));
 
-var _config = _interopRequireDefault(require("../../config"));
+var _config = require("../../config");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var AOS_CONFIG = {
-  type: 'fade',
-  duration: 300,
-  delay: 100
-};
 var REFERENCES = [{
   quote: 'Jason brings a creativity to technology rarely seen in many developers ... Jason continues to be a resource that I count on not only from a development perspective but also as a trusted advisor for future development and the evolution of our technology platforms.',
-  cite_url: _config.default.fileUploadPath + _config.default.resumeFileName,
   cite_name: 'Gregg Tilston',
   company_name: 'Flight Centre Ltd.'
 }, {
   quote: 'I found him very detailed and extremely helpful. He listened to my needs as a client and what I wanted for the site and delivered it on time and in budget.',
-  cite_url: _config.default.fileUploadPath + _config.default.resumeFileName,
   cite_name: 'Jennifer Huether, MS',
   company_name: 'Cliff Lede Vineyards'
 }, {
   quote: 'Jason is an extremely detail-oriented person who was an absolute pleasure to work with. He always provides creative ideas on how things can be completed more efficiently and effectively. Jason is a great team player and is never afraid to lend a helping hand in any task or request. His excellent knowledge in his field, complemented with his strong work ethic would be an asset to any company!',
-  cite_url: _config.default.fileUploadPath + _config.default.resumeFileName,
   cite_name: 'Rina Kazavchinski',
   company_name: '52 Pick-Up Inc.'
 }];
@@ -38170,16 +38165,16 @@ var List = function List(props) {
 var References = function References() {
   return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("h3", {
     className: "subsection-title",
-    "data-aos": "fade",
-    "data-aos-duration": "300",
-    "data-aos-delay": "100"
+    "data-aos": _config.AOS_CONFIG.type,
+    "data-aos-duration": _config.AOS_CONFIG.duration,
+    "data-aos-delay": _config.AOS_CONFIG.delay
   }, "References"), _react.default.createElement("div", {
     className: "quote"
   }, _react.default.createElement(List, {
     items: REFERENCES,
-    aosType: AOS_CONFIG.type,
-    aosDuration: AOS_CONFIG.duration,
-    aosDelay: AOS_CONFIG.delay
+    aosType: _config.AOS_CONFIG.type,
+    aosDuration: _config.AOS_CONFIG.duration,
+    aosDelay: _config.AOS_CONFIG.delay
   })));
 };
 
@@ -38201,31 +38196,33 @@ var _WorkExperience = _interopRequireDefault(require("../components/WorkExperien
 
 var _References = _interopRequireDefault(require("../components/References"));
 
+var _config = require("../../config");
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var About = function About() {
   return _react.default.createElement("section", {
     className: "section section-resume",
-    "data-aos": "fade",
-    "data-aos-duration": "300",
-    "data-aos-delay": "100"
+    "data-aos": _config.AOS_CONFIG.type,
+    "data-aos-duration": _config.AOS_CONFIG.duration,
+    "data-aos-delay": _config.AOS_CONFIG.delay
   }, _react.default.createElement("div", {
     className: "contain"
   }, _react.default.createElement("h2", {
     className: "section-title",
-    "data-aos": "fade",
-    "data-aos-duration": "300",
-    "data-aos-delay": "100"
+    "data-aos": _config.AOS_CONFIG.type,
+    "data-aos-duration": _config.AOS_CONFIG.duration,
+    "data-aos-delay": _config.AOS_CONFIG.delay
   }, "About"), _react.default.createElement("p", {
-    "data-aos": "fade",
-    "data-aos-duration": "300",
-    "data-aos-delay": "100"
+    "data-aos": _config.AOS_CONFIG.type,
+    "data-aos-duration": _config.AOS_CONFIG.duration,
+    "data-aos-delay": _config.AOS_CONFIG.delay
   }, "Determined in building the best digital products that I can be proud of. Committed to learning and sharing ideas with the team. Always trying to be the best I can be."), _react.default.createElement(_Skills.default, null), _react.default.createElement(_WorkExperience.default, null), _react.default.createElement(_References.default, null)));
 };
 
 var _default = About;
 exports.default = _default;
-},{"react":"../node_modules/react/index.js","../components/Skills":"js/components/Skills.js","../components/WorkExperience":"js/components/WorkExperience.js","../components/References":"js/components/References.js"}],"js/Home.js":[function(require,module,exports) {
+},{"react":"../node_modules/react/index.js","../components/Skills":"js/components/Skills.js","../components/WorkExperience":"js/components/WorkExperience.js","../components/References":"js/components/References.js","../../config":"config.js"}],"js/Home.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
