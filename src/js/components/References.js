@@ -1,11 +1,11 @@
 import React from 'react';
-import CONFIG from '../config';
+import CONFIG from '../../config';
 
 const AOS_CONFIG = {
   type: 'fade',
   duration: 300,
-  delay: 100
-}
+  delay: 100,
+};
 
 const REFERENCES = [
   {
@@ -25,21 +25,21 @@ const REFERENCES = [
     cite_url: CONFIG.fileUploadPath + CONFIG.resumeFileName,
     cite_name: 'Rina Kazavchinski',
     company_name: '52 Pick-Up Inc.'
-  }
+  },
 ];
 
 const List = (props) => {
   const items = props.items;
   const listItems = items.map((item, index) =>
     <React.Fragment key={index}>
-      <blockquote cite={ item.cite_url } className={props.className} data-aos={props.aosType} data-aos-duration={props.aosDuration} data-aos-delay={props.aosDelay}>
+      <blockquote className={props.className} data-aos={props.aosType} data-aos-duration={props.aosDuration} data-aos-delay={props.aosDelay}>
         { item.quote }
       </blockquote>
       <cite>- { item.cite_name } ({ item.company_name })</cite>
     </React.Fragment>
   );
 
-  return listItems
+  return listItems;
 }
 
 const References = () =>
