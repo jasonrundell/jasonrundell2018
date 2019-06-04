@@ -6,7 +6,7 @@ import Home from './Home';
 import '../scss/styles.scss';
 
 const NoMatch = location => (
-  <div>
+  <React.Fragment>
     <main id="main">
       <section className="section section-keynote keynote">
         <div className="contain">
@@ -14,11 +14,11 @@ const NoMatch = location => (
             404 - Page not found for
             <code>{location.pathname}</code>
           </h1>
-          <p><Link to="/">Return to Home</Link></p>
+          <p><Link to="/" className="link">Return to Home</Link></p>
         </div>
       </section>
     </main>
-  </div>
+  </React.Fragment>
 );
 
 const App = () => (

@@ -38350,14 +38350,15 @@ require("../scss/styles.scss");
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var NoMatch = function NoMatch(location) {
-  return _react.default.createElement("div", null, _react.default.createElement("main", {
+  return _react.default.createElement(_react.default.Fragment, null, _react.default.createElement("main", {
     id: "main"
   }, _react.default.createElement("section", {
     className: "section section-keynote keynote"
   }, _react.default.createElement("div", {
     className: "contain"
   }, _react.default.createElement("h1", null, "404 - Page not found for", _react.default.createElement("code", null, location.pathname)), _react.default.createElement("p", null, _react.default.createElement(_reactRouterDom.Link, {
-    to: "/"
+    to: "/",
+    className: "link"
   }, "Return to Home"))))));
 };
 
