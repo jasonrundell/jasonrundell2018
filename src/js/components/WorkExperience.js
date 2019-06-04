@@ -3,8 +3,8 @@ import React from 'react';
 const AOS_CONFIG = {
   type: 'fade',
   duration: 300,
-  delay: 100
-}
+  delay: 100,
+};
 
 const POSITIONS = [
   {
@@ -48,7 +48,7 @@ const POSITIONS = [
     company_name: 'EZD Consulting Inc.',
     start_date: 'October 2001',
     end_date: 'August 2008'
-  }
+  },
 ];
 
 const List = (props) => {
@@ -63,10 +63,10 @@ const List = (props) => {
 
   return(
     <ul className={props.className} data-aos={props.aosType} data-aos-duration={props.aosDuration} data-aos-delay={props.aosDelay}>{listItems}</ul>
-  )
-}
+  );
+};
 
-const WorkExperience = () =>
+const WorkExperience = () => (
   <React.Fragment>
     <h3 className="subsection-title" data-aos="fade" data-aos-duration="300" data-aos-delay="100">Experience</h3>
     <List
@@ -77,5 +77,6 @@ const WorkExperience = () =>
       aosDelay={AOS_CONFIG.delay}
     />
   </React.Fragment>
+);
 
 export default WorkExperience;

@@ -42,7 +42,7 @@ const List = (props) => {
   return listItems;
 }
 
-const References = () =>
+const References = () => (
   <React.Fragment>
     <h3 className="subsection-title" data-aos="fade" data-aos-duration="300" data-aos-delay="100">References</h3>
     <div className="quote">
@@ -54,5 +54,6 @@ const References = () =>
       />
     </div>
   </React.Fragment>
+);
 
 export default References;

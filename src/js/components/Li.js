@@ -2,6 +2,6 @@
 import React from 'react';
 
 const Li = (props) =>
-  <li {... props}>{props.children}</li>;
+  <li {...props}>{props.children}</li>;
 
 export default Li;

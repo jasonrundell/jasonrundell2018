@@ -3,7 +3,7 @@ import Skills from '../components/Skills';
 import WorkExperience from '../components/WorkExperience';
 import References from '../components/References';
 
-const About = () =>
+const About = () => (
   <section className="section section-resume" data-aos="fade" data-aos-duration="300" data-aos-delay="100">
     <div className="contain">
       <h2 className="section-title" data-aos="fade" data-aos-duration="300" data-aos-delay="100">About</h2>
@@ -13,5 +13,6 @@ const About = () =>
       <References />
     </div>
   </section>
+);
 
 export default About;

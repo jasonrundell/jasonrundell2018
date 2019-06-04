@@ -1,7 +1,7 @@
 import React from 'react';
 import DownloadResumeButton from './DownloadResumeButton';
 
-const GlobalHeader = () =>
+const GlobalHeader = () => (
   <header className="header">
     <div className="site-header">
       <div className="contain">
@@ -16,5 +16,6 @@ const GlobalHeader = () =>
       </div>
     </div>
   </header>
+);
 
 export default GlobalHeader;

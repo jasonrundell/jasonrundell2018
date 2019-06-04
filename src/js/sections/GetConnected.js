@@ -1,6 +1,6 @@
 import React from 'react';
 
-const GetConnected = () =>
+const GetConnected = () => (
   <section id="contact" className="section section-contact" data-aos="fade" data-aos-duration="300">
     <div className="contain">
       <h2 className="section-title">Get connected</h2>
@@ -17,5 +17,6 @@ const GetConnected = () =>
       </ul>
     </div>
   </section>
+);
 
 export default GetConnected;
