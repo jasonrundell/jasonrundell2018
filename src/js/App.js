@@ -3,7 +3,7 @@ import {
   BrowserRouter as Router, Route, Switch, Link,
 } from 'react-router-dom';
 import Home from './Home';
-import '../scss/styles.scss';
+import '../scss/base.scss';
 
 const NoMatch = location => (
   <React.Fragment>

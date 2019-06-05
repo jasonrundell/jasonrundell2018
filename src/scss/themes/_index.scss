@@ -1,0 +1,27 @@
+.theme__vitan {
+  @import "vitan";
+
+  font-family: $font_sans_serif;
+  position: relative;
+  line-height: $line_height_base;
+  background: $bg_color_prime;
+  color: $font_color_prime;
+  margin: $size_none;
+  padding: $size_none;
+  height: 100%;
+  width: 100%;
+}
+
+.theme__jumbleberry {
+  // @import "jumbleberry";
+
+  font-family: $font_sans_serif;
+  position: relative;
+  line-height: $line_height_base;
+  background: $bg_color_prime;
+  color: $font_color_prime;
+  margin: $size_none;
+  padding: $size_none;
+  height: 100%;
+  width: 100%;
+}

@@ -1,0 +1,65 @@
+.button__download {
+  display: inline-block;
+  font-size: $size_md;
+  line-height: $size_sm;
+  padding: $size_sm;
+  background: $color_prime;
+  border: 1px solid $color_prime_light;
+  @include border-radius($size_xs/4);
+  @include transition(all, 0.5s, ease);
+  @include animation(0, 1000ms, linear, 1);
+  @include breakpoint(md) {
+    font-size: $size_md;
+  }
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent_color_prime;
+    text-decoration: none;
+  }
+  &:hover,
+  &:focus {
+    background: $color_prime_light;
+    border-color: $accent_color_prime;
+  }
+  &:active {
+    color: $accent_color_dark;
+    background: $color_prime_darker;
+  }
+  &.active {
+    color: $accent_color_dark;
+  }
+
+  .arrow-icon {
+    position: relative;
+    top: -1px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+    vertical-align: middle;
+    transform: rotate(90deg);
+  }
+  .arrow-icon--circle {
+    transition: stroke-dashoffset 0.3s ease;
+    stroke-dasharray: 95;
+    stroke-dashoffset: 95;
+  }
+  &:hover {
+    text-decoration: none;
+    .arrow-icon {
+      transform: translate3d(5px, 0, 0);
+      transform: rotate(90deg);
+      stroke: #e9be62;
+    }
+    .arrow-icon--circle {
+      stroke-dashoffset: 0;
+      stroke: #e9be62;
+    }
+    .arrow-icon--arrow {
+      stroke: #e9be62;
+    }
+  }
+}

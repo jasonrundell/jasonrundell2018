@@ -1,0 +1,39 @@
+// Looks just like the first example
+.sp-all {
+  margin: var(--sp);
+}
+
+.sp-top {
+  margin-top: var(--sp);
+}
+
+.sp-right {
+  margin-right: var(--sp);
+}
+
+.sp-bottom {
+  margin-bottom: var(--sp);
+}
+
+.sp-left {
+  margin-left: var(--sp);
+}
+
+.sp-vertical {
+  @extend .sp-top;
+  @extend .sp-bottom;
+}
+
+.sp-horizontal {
+  @extend .sp-left;
+  @extend .sp-right;
+}
+
+// Modifier Classes
+.sp--sm {
+  --sp: var(--sp-sm);
+}
+
+.sp--lg {
+  --sp: var(--sp-lg);
+}

@@ -1,0 +1,61 @@
+// Prime
+$color_prime: #232f3e;
+$color_prime_light: lighten($color_prime, 10%);
+$color_prime_lighter: lighten($color_prime, 50%);
+$color_prime_dark: darken($color_prime, 10%);
+$color_prime_darker: darken($color_prime, 30%);
+
+// Background
+$bg_color_prime: $color_prime;
+$bg_color_prime_light: lighten($bg_color_prime, 10%);
+$bg_color_prime_lighter: lighten($bg_color_prime, 30%);
+$bg_color_prime_dark: darken($bg_color_prime, 10%);
+$bg_color_prime_darker: darken($bg_color_prime, 30%);
+
+// Font
+$font_color_prime: $color_prime_lighter;
+$font_color_light: lighten($font_color_prime, 10%);
+$font_color_lighter: lighten($font_color_prime, 30%);
+$font_color_dark: darken($font_color_prime, 10%);
+$font_color_darker: darken($font_color_prime, 30%);
+
+// Accent
+$accent_color_prime: #e9be62;
+$accent_color_light: lighten($accent_color_prime, 10%);
+$accent_color_lighter: lighten($accent_color_prime, 10%);
+$accent_color_dark: darken($accent_color_prime, 10%);
+$accent_color_darker: darken($accent_color_prime, 10%);
+
+// Link
+$link_color_prime: $accent_color_prime;
+$link_color_light: lighten($link_color_prime, 10%);
+$link_color_lighter: lighten($link_color_prime, 30%);
+$link_color_dark: darken($link_color_prime, 10%);
+$link_color_darker: darken($link_color_prime, 30%);
+
+// Typography
+$font_sans_serif: "Montserrat", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+$font_serif: "Times New Roman", "Times", serif;
+$font_size_base: 125%;
+$line_height_base: 1.5;
+
+// Utilities
+$size_none: 0;
+$size_xxs: 0.7rem;
+$size_xs: 0.8rem;
+$size_sm: 0.9rem;
+$size_md: 1rem;
+$size_lg: 1.5rem;
+$size_xl: 1.8rem;
+$size_xxl: 2rem;
+
+$size_10: 10%;
+$size_20: 20%;
+$size_30: 30%;
+$size_40: 40%;
+$size_50: 50%;
+$size_60: 60%;
+$size_70: 70%;
+$size_80: 80%;
+$size_90: 90%;
+$size_100: 100%;
