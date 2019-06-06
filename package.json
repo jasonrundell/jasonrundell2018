@@ -12,17 +12,19 @@
     "start": "npm run clean && npm run copy-static-files && parcel ./src/index.html",
     "clean": "rimraf ./dist && shx mkdir ./dist",
     "copy-static-files": "shx cp ./src/robots.txt ./dist/robots.txt && shx cp -r ./src/password ./dist/password && shx cp -r ./src/time ./dist/time && shx cp -r ./src/files ./dist/files",
-    "build": "npm run clean && npm run copy-static-files && parcel build ./src/index.html",
-    "stylelint": "stylelint 'src/scss/**/*.scss'"
+    "build": "npm run clean && npm run copy-static-files && parcel build ./src/index.html"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Jason Rundell",
+    "email": "jason.rundell@gmail.com",
+    "url": "https://jasonrundell.com"
+  },
   "license": "ISC",
   "dependencies": {
     "aos": "^2.3.4",
     "babel-polyfill": "^6.26.0",
     "history": "^4.9.0",
-    "parcel-bundler": "^1.12.3",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -39,6 +41,7 @@
     "eslint-plugin-react": "^7.13.0",
     "jest": "^24.8.0",
     "normalize.css": "^8.0.1",
+    "parcel-bundler": "^1.12.3",
     "parcel-plugin-purifycss": "^1.0.5",
     "parcel-plugin-sw-precache": "^1.1.1",
     "rimraf": "^2.6.3",
