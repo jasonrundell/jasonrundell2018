@@ -16,7 +16,11 @@
     "stylelint": "stylelint 'src/scss/**/*.scss'"
   },
   "keywords": [],
-  "author": "",
+  "author": {
+    "name": "Jason Rundell",
+    "email": "jason.rundell@gmail.com",
+    "url": "https://jasonrundell.com"
+  },
   "license": "ISC",
   "dependencies": {
     "aos": "^2.3.4",
