@@ -8,7 +8,7 @@ const GlobalFooter = () => (
       <div className="contain">
         <span className="nowrap">
           Jason Rundell &copy;
-          { new Date().getFullYear() }
+          {new Date().getFullYear()}
         </span>
         . All rights reserved.
       </div>

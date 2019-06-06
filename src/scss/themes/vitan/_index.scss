@@ -1,0 +1,223 @@
+// https://fonts.google.com/specimen/Montserrat?selection.family=Montserrat:200,300,400,400i,500
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,300,400,400i,500&display=swap');
+@import "core";
+@import "vendor/aos";
+@import "components";
+
+// Layout
+.contain {
+  margin: 0 auto;
+  padding: 0 $size_md * 3;
+  // width: 100%;
+  @include breakpoint(sm) {
+    padding: 0 $size_md * 8;
+  }
+  @include breakpoint(md) {
+    width: $size_md * 36;
+    padding: 0;
+  }
+  @include breakpoint(lg) {
+    width: $size_md * 42;
+  }
+  @include breakpoint(xl) {
+    width: $size_md * 54;
+  }
+  @include clearfix;
+}
+
+// Layout
+.contain-fluid {
+  width: 100%;
+  @include clearfix;
+}
+
+.page-title {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.3rem;
+  font-weight: 500;
+  @include breakpoint(md) {
+    font-size: 2.75rem;
+  }
+}
+.section-title {
+  margin-top: 0;
+}
+.subsection-title {
+  margin-top: $size_md * 4;
+}
+
+// Header
+
+.header {
+  height: $size_md * 5.25;
+  @include breakpoint(md) {
+    height: $size_md * 6;
+  }
+}
+.site-header {
+  background: linear-gradient(0deg, rgba(35, 47, 62, 0) 0%, rgba(26, 35, 46, 1) 100%);
+  display: block;
+  position: fixed;
+
+  width: 100%;
+  padding: $size_md $size_none;
+  @include transition(all, 0.5s, ease);
+  top: 0;
+  z-index: 99;
+}
+
+// footer
+.footer {
+  background-color: $bg_color_prime_darker;
+  color: $color_prime_lighter;
+}
+
+.copyright {
+  font-size: 0.85em;
+  @include breakpoint(md) {
+    font-size: 0.8em;
+  }
+}
+
+// Keynote
+.keynote {
+  font-size: 1.25em;
+  //margin-bottom: $size_md * 4;
+  font-weight: 300;
+  //text-align: center;
+  @include breakpoint(sm) {
+    text-align: left;
+  }
+  @include breakpoint(md) {
+    font-size: 1.25em;
+  }
+  @include breakpoint(lg) {
+  }
+  p:last-child {
+    margin-bottom: 0;
+    font-size: 0.75em;
+  }
+}
+.keynote-subtitle {
+  margin-bottom: $size_md * 2;
+  font-weight: 300;
+}
+
+// Lists
+.list-xp {
+  @include list-reset;
+  li {
+    margin-bottom: $size_md * 2;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.list-skills {
+  @include list-reset;
+  li {
+    display: inline;
+    @include transition(all, 0.5s, ease);
+    &:after {
+      color: $accent_color_prime;
+      content: " + ";
+    }
+    &:last-child:after {
+      content: "";
+    }
+    &:hover {
+      color: $accent_color_prime;
+    }
+  }
+}
+
+// Navigation
+.nav-header {
+  display: block;
+  float: right;
+}
+.nav-main {
+  clear: both;
+  @include list-reset;
+  margin-right: -$size_md;
+  @include breakpoint(md) {
+    margin-right: -$size_md;
+  }
+  li {
+    display: inline-block;
+  }
+}
+
+// Skip
+.link-skip {
+  display: inline-block;
+  position: absolute;
+  left: -22rem;
+  font-size: $size_md;
+  line-height: $size_md;
+  color: $color_prime;
+  background-color: $accent_color_prime;
+  padding: $size_xs;
+  @include border-radius(0 $size_md/4 $size_md/4 0);
+  @include transition(all, 0.5s, ease);
+  @include breakpoint(md) {
+    font-size: $size_md;
+    @include border-radius(0 $size_md/5 $size_md/5 0);
+  }
+  &:visited,
+  &:focus,
+  &:hover,
+  &:active {
+    color: $color_prime;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    left: 0;
+    background-color: $accent_color_prime;
+  }
+  &:active {
+    background-color: $accent_color_dark;
+  }
+}
+
+.quote {
+  position: relative;
+  margin: 0 auto $size_lg * 2 auto;
+  blockquote {
+    margin: $size_lg 0;
+    padding-right: $size_lg;
+    @include clearfix;
+    &:before,
+    &:after {
+      display: inline;
+      position: absolute;
+      font-family: $font_serif;
+      font-size: $size_lg * 2;
+      font-weight: 300;
+      color: $color_prime_lighter;
+      opacity: 0.8;
+    }
+    &:before {
+      content: "\275D";
+      top: -$size_lg;
+      left: -$size_lg * 1.5;
+    }
+    &:after {
+      content: "\275E";
+      right: -$size_lg;
+    }
+  }
+  cite {
+    margin-top: $size_md;
+    color: $accent_color_light;
+    font-style: normal;
+  }
+}
+
+// No line breaks
+.nowrap {
+  white-space: nowrap;
+}

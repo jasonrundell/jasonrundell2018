@@ -1,0 +1,39 @@
+.button__download {
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:focus,
+  &:active {
+
+  }
+  &:hover,
+  &:focus {
+
+  }
+  &:active {
+
+  }
+  &.active {
+
+  }
+
+  .arrow-icon {
+
+  }
+  .arrow-icon--circle {
+
+  }
+  &:hover {
+
+    .arrow-icon {
+
+    }
+    .arrow-icon--circle {
+
+    }
+    .arrow-icon--arrow {
+
+    }
+  }
+}

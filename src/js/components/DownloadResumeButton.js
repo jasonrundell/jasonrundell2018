@@ -1,11 +1,8 @@
 import React from 'react';
-// import CONFIG from '../config';
-
-// const resumeFile = 'jason-rundell-web-developer-resume.pdf';
-const resumeFile = 'https://s3.amazonaws.com/jasonrundell.com/files/jason-rundell-web-developer-resume.pdf';
+import { APP_CONFIG } from '../../config';
 
 const DownloadResumeButton = () => (
-  <a href={resumeFile} className="button__download">
+  <a href={APP_CONFIG.resumeFile} className="button__download">
     Download r&eacute;sum&eacute;
     <svg className="arrow-icon ml1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
       <g fill="none" stroke="#e9be62" strokeWidth="1.5" strokeLinejoin="round" strokeMiterlimit="10">

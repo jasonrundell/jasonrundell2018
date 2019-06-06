@@ -8,9 +8,9 @@ const UnorderedList = (props) => {
     <Li key={index} className={props.classNameChildren} data-aos={props.aosType} data-aos-duration={props.aosDuration} data-aos-delay={props.aosDelay}>{item}</Li>
   );
 
-  return(
+  return (
     <ul className={props.className} data-aos={props.aosType} data-aos-duration={props.aosDuration} data-aos-delay={props.aosDelay}>{listItems}</ul>
-  )
-}
+  );
+};
 
 export default UnorderedList;
