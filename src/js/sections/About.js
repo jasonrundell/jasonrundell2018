@@ -7,7 +7,7 @@ import { AOS_CONFIG } from '../../config';
 const About = () => (
   <section className="section section-resume" data-aos={AOS_CONFIG.type} data-aos-duration={AOS_CONFIG.duration} data-aos-delay={AOS_CONFIG.delay}>
     <div className="contain">
-      <h2 className="section-title" data-aos={AOS_CONFIG.type} data-aos-duration={AOS_CONFIG.duration} data-aos-delay={AOS_CONFIG.delay}>About</h2>
+      <h3 className="section-title" data-aos={AOS_CONFIG.type} data-aos-duration={AOS_CONFIG.duration} data-aos-delay={AOS_CONFIG.delay}>About</h3>
       <p data-aos={AOS_CONFIG.type} data-aos-duration={AOS_CONFIG.duration} data-aos-delay={AOS_CONFIG.delay}>Determined in building the best digital products that I can be proud of. Committed to learning and sharing ideas with the team. Always trying to be the best I can be.</p>
       <Skills />
       <WorkExperience />
