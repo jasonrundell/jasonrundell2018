@@ -19,6 +19,22 @@
   font-weight: 500;
 }
 
+.font--xxs {
+  font-size: $size_70;
+}
+
+.font--xs {
+  font-size: $size_80;
+}
+
+.font--sm {
+  font-size: $size_90;
+}
+
+.font--md {
+  font-size: $size_100;
+}
+
 a, p, ul, li, blockquote, cite, header, footer {
   @extend .font__regular;
 }
