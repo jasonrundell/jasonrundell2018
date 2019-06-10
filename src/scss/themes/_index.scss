@@ -1,7 +1,9 @@
+@import "vitan/core/fonts";
+
 .theme__vitan {
   @import "vitan";
 
-  font-family: $font_sans_serif;
+  @extend .font__regular;
   font-size: $font_size_base;
   position: relative;
   line-height: $line_height_base;
