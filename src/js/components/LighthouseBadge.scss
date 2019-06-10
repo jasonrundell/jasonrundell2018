@@ -1,6 +1,6 @@
-$lighthousebadge_color_score_high: limegreen;
-$lighthousebadge_color_score_moderate: orange;
-$lighthousebadge_color_score_low: red;
+$lighthousebadge_color_score_pass: rgb(12, 206, 107);
+$lighthousebadge_color_score_average: rgb(255, 164, 0);
+$lighthousebadge_color_score_fail: rgb(255, 78, 66);
 
 $lighthouse_badge_color: #e9be62;
 
@@ -26,14 +26,14 @@ $lighthouse_font_size_small: 80%;
     font-family: $lighthouse_font_score;
     font-size: $lighthouse_font_size_reg;
   }
-  .score--high {
-    color: $lighthousebadge_color_score_high;
+  .score--pass {
+    color: $lighthousebadge_color_score_pass;
   }
-  .score--moderate {
-    color: $lighthousebadge_color_score_moderate;
+  .score--average {
+    color: $lighthousebadge_color_score_average;
   }
-  .score--low {
-    color: $lighthousebadge_color_score_low;
+  .score--fail {
+    color: $lighthousebadge_color_score_fail;
   }
   .label {
     font-family: $lighthouse_font_label;
