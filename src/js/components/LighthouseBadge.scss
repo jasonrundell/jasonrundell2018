@@ -1,0 +1,65 @@
+$lighthousebadge_color_score_high: limegreen;
+$lighthousebadge_color_score_moderate: orange;
+$lighthousebadge_color_score_low: red;
+
+$lighthouse_badge_color: #e9be62;
+
+$lighthouse_font_score: monospace;
+$lighthouse_font_label: $lighthouse_font_score;
+$lighthouse_font_link: $lighthouse_font_score;
+
+$lighthouse_font_size_reg: 125%;
+$lighthouse_font_size_small: 80%;
+
+.LightHouseBadge {
+  border: 3px solid $lighthouse_badge_color;
+  border-radius: 0.7rem;
+  .logo {
+    width: auto;
+    height: 2rem;
+    padding: 0.5rem;
+  }
+  .detail {
+    padding: 0.5rem;
+  }
+  .score {
+    font-family: $lighthouse_font_score;
+    font-size: $lighthouse_font_size_reg;
+  }
+  .score--high {
+    color: $lighthousebadge_color_score_high;
+  }
+  .score--moderate {
+    color: $lighthousebadge_color_score_moderate;
+  }
+  .score--low {
+    color: $lighthousebadge_color_score_low;
+  }
+  .label {
+    font-family: $lighthouse_font_label;
+    font-size: $lighthouse_font_size_small;
+  }
+  .link {
+    font-family: $lighthouse_font_link;
+    font-size: $lighthouse_font_size_small;
+    color: $lighthouse_badge_color;
+  }
+  .row__scores {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    @media (min-width: 486px) {
+      justify-content: space-evenly;
+    }
+  }
+  .row__report {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

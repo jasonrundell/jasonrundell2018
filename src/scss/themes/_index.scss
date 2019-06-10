@@ -1,4 +1,4 @@
-@import "vitan/core/fonts";
+@import "vitan/core/font-faces";
 
 .theme__vitan {
   @import "vitan";
@@ -9,8 +9,8 @@
   line-height: $line_height_base;
   background: $bg_color_prime;
   color: $font_color_prime;
-  margin: $size_none;
-  padding: $size_none;
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
 }
@@ -23,8 +23,8 @@
   line-height: $line_height_base;
   background: $bg_color_prime;
   color: $font_color_prime;
-  margin: $size_none;
-  padding: $size_none;
+  margin: 0;
+  padding: 0;
   height: 100%;
   width: 100%;
 }

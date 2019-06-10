@@ -1,39 +1,3 @@
-// Looks just like the first example
-.sp-all {
-  margin: var(--sp);
-}
-
-.sp-top {
-  margin-top: var(--sp);
-}
-
-.sp-right {
-  margin-right: var(--sp);
-}
-
-.sp-bottom {
-  margin-bottom: var(--sp);
-}
-
-.sp-left {
-  margin-left: var(--sp);
-}
-
-.sp-vertical {
-  @extend .sp-top;
-  @extend .sp-bottom;
-}
-
-.sp-horizontal {
-  @extend .sp-left;
-  @extend .sp-right;
-}
-
-// Modifier Classes
-.sp--sm {
-  --sp: var(--sp-sm);
-}
-
 .ml1 {
   margin-left: 0.25rem;
 }
@@ -42,7 +6,27 @@
   margin-left: 0.5rem;
 }
 
-
-.sp--lg {
-  --sp: var(--sp-lg);
+.mb5 {
+  margin-bottom: 1.25rem;
 }
+
+.pa1 {
+  padding: 0.25rem;
+}
+
+.pa2 {
+  padding: 0.5rem;
+}
+
+.pb1 {
+  padding-bottom: 0.25rem;
+}
+
+.pl1 {
+  padding-left: 0.25rem;
+}
+
+.pr1 {
+  padding-right: 0.25rem;
+}
+
