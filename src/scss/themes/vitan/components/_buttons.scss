@@ -2,7 +2,7 @@
   display: inline-block;
   font-size: $size_md;
   line-height: $size_sm;
-  padding: $size_sm;
+  padding: 0.9rem 0.6rem 0.3rem 0.9rem;
   background: $color_prime;
   border: 1px solid $color_prime_light;
   @include border-radius($size_xs/4);

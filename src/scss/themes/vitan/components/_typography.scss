@@ -1,34 +1,57 @@
+/* 200, 300, 400, 400i, 500 */
+.font__regular {
+  font-family: "montserratregular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 400;
+}
+
+.font__light {
+  font-family: "montserrat_lightregular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+.font__extralight {
+  font-family: "montserrat_extralightregular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.font__medium {
+  font-family: "montserrat_mediumregular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+a, p, ul, li, blockquote, cite, header, footer {
+  @extend .font__regular;
+}
+
+em {
+  @extend .font__light;
+  font-style: italic;
+}
+
 p {
+  @extend .font__regular;
   line-height: $line_height_base;
   @include transition(all, 0.5s, ease);
 }
 
 h1 {
   font-size: 2.375em;
-  @include breakpoint(md) {
-    font-size: 2.4em;
-  }
-  font-weight: 500;
 }
 h2 {
   font-size: 1.8em;
-  font-weight: 500;
 }
 h3 {
   font-size: 1.6em;
-  font-weight: 500;
 }
 h4 {
   font-size: 1.625em;
-  font-weight: 300;
+  @extend .font__light;
 }
 h5 {
   font-size: 1.4em;
-  font-weight: 500;
 }
 h6 {
   font-size: 1.2em;
-  font-weight: 500;
 }
 h1,
 h2,
@@ -36,7 +59,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font_sans_serif;
+  @extend .font__medium;
   line-height: 1.25;
   margin-top: 1em;
   margin-bottom: 1.25rem;
