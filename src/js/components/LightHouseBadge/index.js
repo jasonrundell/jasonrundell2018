@@ -14,12 +14,12 @@ const LightHouseBadge = (props) => (
         <div style={styles.scorePass}>{props.accessibilityScore}</div>
         <div style={styles.label}>Accessibility</div>
       </div>
-      <div style={styles.scorePass}>
-        <div style={styles.scoreAverage}>{props.bestPracticesScore}</div>
+      <div style={styles.detail}>
+        <div style={styles.scorePass}>{props.bestPracticesScore}</div>
         <div style={styles.label}>Best Practices</div>
       </div>
-      <div style={styles.scorePass}>
-        <div style={styles.scoreFail}>{props.seoScore}</div>
+      <div style={styles.detail}>
+        <div style={styles.scorePass}>{props.seoScore}</div>
         <div style={styles.label}>SEO</div>
       </div>
     </div>
