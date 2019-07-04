@@ -2,7 +2,7 @@ import config from './config-styles';
 
 export default {
   root: {
-    maxWidth: '25rem',
+    maxWidth: '27rem',
     border: '3px solid ' + config.badgeColor,
     borderRadius: '0.7rem',
   },
