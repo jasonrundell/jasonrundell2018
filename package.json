@@ -9,11 +9,11 @@
   },
   "scripts": {
     "test": "jest",
-    "start": "npm run develop",
-    "develop": "npm run clean && npm run copy-static-files && parcel ./src/index.html",
+    "start": "yarn develop",
+    "develop": "yarn clean && yarn copy-static-files && parcel ./src/index.html",
     "clean": "rimraf ./dist && shx mkdir ./dist",
     "copy-static-files": "shx cp ./src/robots.txt ./dist/robots.txt && shx cp -r ./src/password ./dist/password && shx cp -r ./src/time ./dist/time && shx cp -r ./src/files ./dist/files",
-    "build": "npm run clean && npm run copy-static-files && parcel build ./src/index.html"
+    "build": "yarn clean && yarn copy-static-files && parcel build ./src/index.html"
   },
   "keywords": [],
   "author": {
