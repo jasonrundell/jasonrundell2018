@@ -1,6 +1,6 @@
 import React from 'react';
 import GetConnected from '../sections/GetConnected';
-import LighthouseBadge from './LighthouseBadge';
+import LightHouseBadge from './LightHouseBadge';
 
 /** todo: make test */
 
@@ -10,7 +10,7 @@ export default () => (
     <section className="section section-copyright copyright">
       <div className="contain">
         <div className="mb5">
-          <LighthouseBadge
+          <LightHouseBadge
             performanceScore="96"
             accessibilityScore="100"
             bestPracticesScore="93"

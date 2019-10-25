@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Logo from './lighthouse.png';
-import styles from './LighthouseBadge.styles';
+import styles from './LightHouseBadge.styles';
 // import './lighthouse-badge.scss';
 
-const LighthouseBadge = ({
+const LightHouseBadge = ({
   performanceScore,
   accessibilityScore,
   bestPracticesScore,
@@ -26,8 +26,7 @@ const LighthouseBadge = ({
           href="https://developers.google.com/web/tools/lighthouse/"
           style={styles.link}
           rel="noopener noreferrer"
-          target="_blank"
-        >
+          target="_blank">
           Lighthouse
         </a>
       );
@@ -69,12 +68,12 @@ const LighthouseBadge = ({
       </a>
  */
 
-LighthouseBadge.defaultProps = {
+LightHouseBadge.defaultProps = {
   reportFileUrl: '',
   dateText: '',
 };
 
-LighthouseBadge.propTypes = {
+LightHouseBadge.propTypes = {
   performanceScore: PropTypes.string.isRequired,
   accessibilityScore: PropTypes.string.isRequired,
   bestPracticesScore: PropTypes.string.isRequired,
@@ -83,4 +82,4 @@ LighthouseBadge.propTypes = {
   dateText: PropTypes.string,
 };
 
-export default LighthouseBadge;
+export default LightHouseBadge;
