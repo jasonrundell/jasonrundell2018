@@ -11,6 +11,7 @@
     "test": "jest",
     "start": "yarn develop",
     "develop": "yarn clean && yarn copy-static-files && parcel ./src/index.html",
+    "format": "prettier --write src/**/*.{js,jsx,md,css,scss,html}",
     "clean": "rimraf ./dist && shx mkdir ./dist",
     "copy-static-files": "shx cp ./src/robots.txt ./dist/robots.txt && shx cp -r ./src/password ./dist/password && shx cp -r ./src/time ./dist/time && shx cp -r ./src/files ./dist/files",
     "build": "yarn clean && yarn copy-static-files && parcel build ./src/index.html"
@@ -45,6 +46,7 @@
     "parcel-bundler": "^1.12.3",
     "parcel-plugin-purifycss": "^1.0.5",
     "parcel-plugin-sw-precache": "^1.1.1",
+    "prettier": "^1.18.2",
     "rimraf": "^2.6.3",
     "sass": "^1.20.3",
     "shx": "^0.3.2"

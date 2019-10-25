@@ -1,5 +1,12 @@
 .link {
   display: block;
   padding: 0.5rem;
-  @include links($accent_color_prime, $accent_color_prime, $accent_color_lighter, $accent_color_lighter, $accent_color_lighter, "underline");
+  @include links(
+    $accent_color_prime,
+    $accent_color_prime,
+    $accent_color_lighter,
+    $accent_color_lighter,
+    $accent_color_lighter,
+    'underline'
+  );
 }

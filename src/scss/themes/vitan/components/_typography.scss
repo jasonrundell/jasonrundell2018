@@ -1,21 +1,25 @@
 /* 200, 300, 400, 400i, 500 */
 .font__regular {
-  font-family: "montserratregular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'montserratregular', 'HelveticaNeue-Light',
+    'Helvetica Neue Light', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 400;
 }
 
 .font__light {
-  font-family: "montserrat_lightregular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'montserrat_lightregular', 'HelveticaNeue-Light',
+    'Helvetica Neue Light', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 300;
 }
 
 .font__extralight {
-  font-family: "montserrat_extralightregular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'montserrat_extralightregular', 'HelveticaNeue-Light',
+    'Helvetica Neue Light', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 200;
 }
 
 .font__medium {
-  font-family: "montserrat_mediumregular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
+  font-family: 'montserrat_mediumregular', 'HelveticaNeue-Light',
+    'Helvetica Neue Light', 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: 500;
 }
 
@@ -35,7 +39,14 @@
   font-size: $size_100;
 }
 
-a, p, ul, li, blockquote, cite, header, footer {
+a,
+p,
+ul,
+li,
+blockquote,
+cite,
+header,
+footer {
   @extend .font__regular;
 }
 

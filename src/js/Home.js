@@ -1,10 +1,10 @@
-import React from 'react';
-import GlobalHeader from './components/GlobalHeader';
-import GlobalFooter from './components/GlobalFooter';
-import Welcome from './sections/Welcome';
-import About from './sections/About';
+import React from 'react'
+import GlobalHeader from './components/GlobalHeader'
+import GlobalFooter from './components/GlobalFooter'
+import Welcome from './sections/Welcome'
+import About from './sections/About'
 
-const Home = () =>
+const Home = () => (
   <React.Fragment>
     <GlobalHeader />
     <main id="main">
@@ -13,5 +13,6 @@ const Home = () =>
     </main>
     <GlobalFooter />
   </React.Fragment>
+)
 
-export default Home;
+export default Home

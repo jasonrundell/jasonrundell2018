@@ -1,9 +1,7 @@
-import React from 'react';
-import {
-  BrowserRouter as Router, Route, Switch, Link,
-} from 'react-router-dom';
-import Home from './Home';
-import '../scss/base.scss';
+import React from 'react'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import Home from './Home'
+import '../scss/base.scss'
 
 const NoMatch = location => (
   <React.Fragment>
@@ -14,12 +12,16 @@ const NoMatch = location => (
             404 - Page not found for
             <code>{location.pathname}</code>
           </h1>
-          <p><Link to="/" className="link">Return to Home</Link></p>
+          <p>
+            <Link to="/" className="link">
+              Return to Home
+            </Link>
+          </p>
         </div>
       </section>
     </main>
   </React.Fragment>
-);
+)
 
 const App = () => (
   <React.Fragment>
@@ -32,6 +34,6 @@ const App = () => (
       </div>
     </Router>
   </React.Fragment>
-);
+)
 
-export default App;
+export default App

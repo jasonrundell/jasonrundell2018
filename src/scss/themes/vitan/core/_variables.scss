@@ -34,8 +34,9 @@ $link_color_dark: darken($link_color_prime, 10%);
 $link_color_darker: darken($link_color_prime, 30%);
 
 // Typography
-$font_sans_serif: "montserratregular", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, sans-serif;
-$font_serif: "Times New Roman", "Times", serif;
+$font_sans_serif: 'montserratregular', 'HelveticaNeue-Light',
+  'Helvetica Neue Light', 'Helvetica Neue', Helvetica, sans-serif;
+$font_serif: 'Times New Roman', 'Times', serif;
 $font_size_base: 125%;
 $line_height_base: 1.5;
 

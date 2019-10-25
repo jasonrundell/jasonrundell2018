@@ -1,9 +1,6 @@
 // Animations variables
 $aos-distance: 40px !default;
 
-
-
-
 /**
  * Fade animations:
  * fade
@@ -53,9 +50,6 @@ $aos-distance: 40px !default;
   transform: translate($aos-distance, -$aos-distance);
 }
 
-
-
-
 /**
  * Zoom animations:
  * zoom-in, zoom-in-up, zoom-in-down, zoom-in-left, zoom-in-right
@@ -73,23 +67,23 @@ $aos-distance: 40px !default;
 }
 
 [data-aos='zoom-in'] {
-  transform: scale(.6);
+  transform: scale(0.6);
 }
 
 [data-aos='zoom-in-up'] {
-  transform: translate(0, $aos-distance) scale(.6);
+  transform: translate(0, $aos-distance) scale(0.6);
 }
 
 [data-aos='zoom-in-down'] {
-  transform: translate(0, -$aos-distance) scale(.6);
+  transform: translate(0, -$aos-distance) scale(0.6);
 }
 
 [data-aos='zoom-in-right'] {
-  transform: translate(-$aos-distance, 0) scale(.6);
+  transform: translate(-$aos-distance, 0) scale(0.6);
 }
 
 [data-aos='zoom-in-left'] {
-  transform: translate($aos-distance, 0) scale(.6);
+  transform: translate($aos-distance, 0) scale(0.6);
 }
 
 [data-aos='zoom-out'] {
@@ -111,9 +105,6 @@ $aos-distance: 40px !default;
 [data-aos='zoom-out-left'] {
   transform: translate($aos-distance, 0) scale(1.2);
 }
-
-
-
 
 /**
  * Slide animations
@@ -143,9 +134,6 @@ $aos-distance: 40px !default;
   transform: translateX(100%);
 }
 
-
-
-
 /**
  * Flip animations:
  * flip-left, flip-right, flip-up, flip-down
@@ -158,20 +146,28 @@ $aos-distance: 40px !default;
 
 [data-aos='flip-left'] {
   transform: perspective(2500px) rotateY(-100deg);
-  &.aos-animate {transform: perspective(2500px) rotateY(0);}
+  &.aos-animate {
+    transform: perspective(2500px) rotateY(0);
+  }
 }
 
 [data-aos='flip-right'] {
   transform: perspective(2500px) rotateY(100deg);
-  &.aos-animate {transform: perspective(2500px) rotateY(0);}
+  &.aos-animate {
+    transform: perspective(2500px) rotateY(0);
+  }
 }
 
 [data-aos='flip-up'] {
   transform: perspective(2500px) rotateX(-100deg);
-  &.aos-animate {transform: perspective(2500px) rotateX(0);}
+  &.aos-animate {
+    transform: perspective(2500px) rotateX(0);
+  }
 }
 
 [data-aos='flip-down'] {
   transform: perspective(2500px) rotateX(100deg);
-  &.aos-animate {transform: perspective(2500px) rotateX(0);}
+  &.aos-animate {
+    transform: perspective(2500px) rotateX(0);
+  }
 }

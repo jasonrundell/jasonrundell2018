@@ -1,31 +1,39 @@
 @font-face {
-  font-family: "montserratregular";
-  src: url("../scss/themes/vitan/fonts/montserrat/montserrat-regular-webfont.woff2") format("woff2"),
-    url("../scss/themes/vitan/fonts/montserrat/montserrat-regular-webfont.woff") format("woff");
+  font-family: 'montserratregular';
+  src: url('../scss/themes/vitan/fonts/montserrat/montserrat-regular-webfont.woff2')
+      format('woff2'),
+    url('../scss/themes/vitan/fonts/montserrat/montserrat-regular-webfont.woff')
+      format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "montserrat_lightregular";
-  src: url("../scss/themes/vitan/fonts/montserrat/montserrat-light-webfont.woff2") format("woff2"),
-    url("../scss/themes/vitan/fonts/montserrat/montserrat-light-webfont.woff") format("woff");
+  font-family: 'montserrat_lightregular';
+  src: url('../scss/themes/vitan/fonts/montserrat/montserrat-light-webfont.woff2')
+      format('woff2'),
+    url('../scss/themes/vitan/fonts/montserrat/montserrat-light-webfont.woff')
+      format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "montserrat_extralightregular";
-  src: url("../scss/themes/vitan/fonts/montserrat/montserrat-extralight-webfont.woff2") format("woff2"),
-    url("../scss/themes/vitan/fonts/montserrat/montserrat-extralight-webfont.woff") format("woff");
+  font-family: 'montserrat_extralightregular';
+  src: url('../scss/themes/vitan/fonts/montserrat/montserrat-extralight-webfont.woff2')
+      format('woff2'),
+    url('../scss/themes/vitan/fonts/montserrat/montserrat-extralight-webfont.woff')
+      format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "montserrat_mediumregular";
-  src: url("../scss/themes/vitan/fonts/montserrat/montserrat-medium-webfont.woff2") format("woff2"),
-    url("../scss/themes/vitan/fonts/montserrat/montserrat-medium-webfont.woff") format("woff");
+  font-family: 'montserrat_mediumregular';
+  src: url('../scss/themes/vitan/fonts/montserrat/montserrat-medium-webfont.woff2')
+      format('woff2'),
+    url('../scss/themes/vitan/fonts/montserrat/montserrat-medium-webfont.woff')
+      format('woff');
   font-weight: normal;
   font-style: normal;
 }

@@ -1,7 +1,6 @@
 // https://developer.mozilla.org/en-US/docs/Web/HTML/Element/li
-import React from 'react';
+import React from 'react'
 
-const Li = (props) =>
-  <li {...props}>{props.children}</li>;
+const Li = props => <li {...props}>{props.children}</li>
 
-export default Li;
+export default Li

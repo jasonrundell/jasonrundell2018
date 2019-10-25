@@ -8,4 +8,4 @@ export default {
   fontLink: 'monospace',
   fontSizeRegular: '125%',
   fontSizeSmall: '80%',
-};
+}

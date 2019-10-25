@@ -1,7 +1,7 @@
-@import "vitan/core/font-faces";
+@import 'vitan/core/font-faces';
 
 .theme__vitan {
-  @import "vitan";
+  @import 'vitan';
 
   @extend .font__regular;
   font-size: $font_size_base;

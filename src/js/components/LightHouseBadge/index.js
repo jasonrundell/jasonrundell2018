@@ -1,8 +1,7 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Logo from './lighthouse.png';
-import styles from './LightHouseBadge.styles';
-// import './lighthouse-badge.scss';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Logo from './lighthouse.png'
+import styles from './LightHouseBadge.styles'
 
 const LightHouseBadge = ({
   performanceScore,
@@ -13,23 +12,24 @@ const LightHouseBadge = ({
   dateText,
 }) => ({
   render() {
-    let report = '';
+    let report = ''
     if (reportFileUrl !== '') {
       report = (
         <a href={reportFileUrl} style={styles.link}>
           {`View Lighthouse ${dateText} Report`}
         </a>
-      );
+      )
     } else {
       report = (
         <a
           href="https://developers.google.com/web/tools/lighthouse/"
           style={styles.link}
           rel="noopener noreferrer"
-          target="_blank">
+          target="_blank"
+        >
           Lighthouse
         </a>
-      );
+      )
     }
     return (
       <div style={styles.root}>
@@ -56,9 +56,9 @@ const LightHouseBadge = ({
           {report}
         </div>
       </div>
-    );
+    )
   },
-});
+})
 
 /**
  * <a href={reportFileUrl} style={styles.link">
@@ -71,7 +71,7 @@ const LightHouseBadge = ({
 LightHouseBadge.defaultProps = {
   reportFileUrl: '',
   dateText: '',
-};
+}
 
 LightHouseBadge.propTypes = {
   performanceScore: PropTypes.string.isRequired,
@@ -80,6 +80,6 @@ LightHouseBadge.propTypes = {
   seoScore: PropTypes.string.isRequired,
   reportFileUrl: PropTypes.string,
   dateText: PropTypes.string,
-};
+}
 
-export default LightHouseBadge;
+export default LightHouseBadge

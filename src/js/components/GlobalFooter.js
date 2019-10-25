@@ -1,6 +1,6 @@
-import React from 'react';
-import GetConnected from '../sections/GetConnected';
-import LightHouseBadge from './LightHouseBadge';
+import React from 'react'
+import GetConnected from '../sections/GetConnected'
+import LightHouseBadge from './LightHouseBadge'
 
 /** todo: make test */
 
@@ -27,4 +27,4 @@ export default () => (
       </div>
     </section>
   </footer>
-);
+)

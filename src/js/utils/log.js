@@ -1,6 +1,6 @@
-const log = (message) => {
+const log = message => {
   // eslint-disable-next-line no-console
-  console.log(message);
-};
+  console.log(message)
+}
 
-export default log;
+export default log

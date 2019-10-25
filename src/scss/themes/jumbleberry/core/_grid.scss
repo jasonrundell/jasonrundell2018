@@ -33,7 +33,7 @@
     &:last-of-type:after,
     &:nth-child(3n):before,
     &:nth-child(3n):after {
-      content: " ";
+      content: ' ';
       display: table;
     }
     &:last-of-type:after,
@@ -43,7 +43,7 @@
   }
   &:before,
   &:after {
-    content: " ";
+    content: ' ';
     display: table;
   }
   &:after {
@@ -61,7 +61,7 @@
     &:last-of-type:after,
     &:nth-child(4n):before,
     &:nth-child(4n):after {
-      content: " ";
+      content: ' ';
       display: table;
     }
     &:last-of-type:after,
@@ -71,7 +71,7 @@
   }
   &:before,
   &:after {
-    content: " ";
+    content: ' ';
     display: table;
   }
   &:after {

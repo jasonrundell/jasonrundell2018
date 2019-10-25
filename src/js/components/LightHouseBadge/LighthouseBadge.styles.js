@@ -1,4 +1,4 @@
-import config from './config-styles';
+import config from './config-styles'
 
 export default {
   root: {
@@ -59,4 +59,4 @@ export default {
       paddingRight: '0.5rem',
     },
   },
-};
+}

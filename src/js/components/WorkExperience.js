@@ -1,5 +1,5 @@
-import React from 'react';
-import { AOS_CONFIG } from '../../config';
+import React from 'react'
+import { AOS_CONFIG } from '../../config'
 
 const POSITIONS = [
   {
@@ -44,26 +44,50 @@ const POSITIONS = [
     start_date: 'October 2001',
     end_date: 'August 2008',
   },
-];
+]
 
-const List = (props) => {
-  const items = props.items;
-  const listItems = items.map((item, index) =>
-    <li key={index} className={props.classNameChildren} data-aos={props.aosType} data-aos-duration={props.aosDuration} data-aos-delay={props.aosDelay}>
-      <strong>{item.role}</strong><br />
-      <em>{item.company_name}</em><br />
-      <small>{item.start_date} - {item.end_date}</small>
+const List = props => {
+  const items = props.items
+  const listItems = items.map((item, index) => (
+    <li
+      key={index}
+      className={props.classNameChildren}
+      data-aos={props.aosType}
+      data-aos-duration={props.aosDuration}
+      data-aos-delay={props.aosDelay}
+    >
+      <strong>{item.role}</strong>
+      <br />
+      <em>{item.company_name}</em>
+      <br />
+      <small>
+        {item.start_date} - {item.end_date}
+      </small>
     </li>
-  );
+  ))
 
   return (
-    <ul className={props.className} data-aos={AOS_CONFIG.type} data-aos-duration={AOS_CONFIG.duration} data-aos-delay={AOS_CONFIG.delay}>{listItems}</ul>
-  );
-};
+    <ul
+      className={props.className}
+      data-aos={AOS_CONFIG.type}
+      data-aos-duration={AOS_CONFIG.duration}
+      data-aos-delay={AOS_CONFIG.delay}
+    >
+      {listItems}
+    </ul>
+  )
+}
 
 const WorkExperience = () => (
   <React.Fragment>
-    <h3 className="subsection-title" data-aos={AOS_CONFIG.type} data-aos-duration={AOS_CONFIG.duration} data-aos-delay={AOS_CONFIG.delay}>Experience</h3>
+    <h3
+      className="subsection-title"
+      data-aos={AOS_CONFIG.type}
+      data-aos-duration={AOS_CONFIG.duration}
+      data-aos-delay={AOS_CONFIG.delay}
+    >
+      Experience
+    </h3>
     <List
       className="list-xp"
       items={POSITIONS}
@@ -72,6 +96,6 @@ const WorkExperience = () => (
       aosDelay={AOS_CONFIG.delay}
     />
   </React.Fragment>
-);
+)
 
-export default WorkExperience;
+export default WorkExperience
