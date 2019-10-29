@@ -9,10 +9,16 @@ const POSITIONS = [
     end_date: 'Present',
   },
   {
+    role: 'Senior Front End Web Developer',
+    company_name: 'Intuit',
+    start_date: 'July 2019',
+    end_date: 'Present',
+  },
+  {
     role: 'Full Stack Web Developer',
     company_name: 'AIR MILES Marketing',
     start_date: 'August 2015',
-    end_date: 'Present',
+    end_date: 'July 2019',
   },
   {
     role: 'Front End Web Developer',
