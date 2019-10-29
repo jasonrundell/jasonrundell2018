@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Logo from './lighthouse.png'
-import styles from '../LightHouseBadge/LightHouseBadge.styles'
+import styles from './LightHouseBadge.styles.js'
 
 const LightHouseBadge = ({
   performanceScore,
