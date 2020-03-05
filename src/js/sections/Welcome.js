@@ -26,8 +26,8 @@ const Welcome = () => (
       >
         Yo! I&apos;m a developer who loves learning and using the latest in
         front end web development. My skill set includes experience with React,
-        Node.js, Gulp, Grunt, PHP, MySQL, SASS, CSS, HTML, JavaScript, and
-        Amazon Web Services (just to name a few).
+        Gulp, PHP, MySQL, SASS, CSS, HTML, JavaScript, and Amazon Web Services
+        (just to name a few).
       </p>
       <p
         data-aos={AOS_CONFIG.type}
