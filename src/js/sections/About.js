@@ -18,7 +18,7 @@ const About = () => (
         data-aos-duration={AOS_CONFIG.duration}
         data-aos-delay={AOS_CONFIG.delay}
       >
-        About
+        Seasoned and Capable
       </h3>
       <p
         data-aos={AOS_CONFIG.type}
